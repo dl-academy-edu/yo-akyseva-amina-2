@@ -1,40 +1,179 @@
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
 
-    <title>DL Academy</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    @@include('blocks/header.html')
 
-    <script>
-      var docElement = document.documentElement;
-      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
-    </script>
+    <main class="container">
+        <section class="bannerSection">
+            <div class="banner">
+                <div class="bannerDOP">
+                    <p>01</p>
+                    <button class="bannerbutton ButtonChecked"><span class="hiddenTitle">page banner</span></button>
+                    <button class="bannerbutton"><span class="hiddenTitle">page banner</span></button>
+                    <button class="bannerbutton"><span class="hiddenTitle">page banner</span></button>
+                    <button class="bannerbutton"><span class="hiddenTitle">page banner</span></button> 
+                </div>
+                <div class="bannerDiv">
+                    <h1 class="bannerTitle">THE OOH NOO COLLECTION</h1>
+                    <p class="italic banneritalic">Designed in Slovenia</p>
+                    <button class="button popupOpen">EXPLORE NOW <span class="hiddenTitle">button banner explore NOW</span></button>
+                </div>
+                <img src="img/png.png" alt="" class="bannerImg" width="635" height="451">
+            </div>  
+            <p class="bannerText">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        </section>
 
-    <!-- Favicon -->
+        <section>
+            <h2 class="title">Category Products</h2>
+            <ul class="serviceList undotted">
+                <li>
+                    <a href="#" class="serviseW CategoryHover">APPAREL KIDS</a>
+                </li>
+                <li>
+                    <a href="#" class="serviseW CategoryHover">HOLIDAY SHOP</a>
+                </li>
+                <li>
+                    <a href="toys.html" class="CategoryHover">TOYS</a>
+                </li>
+                <li>
+                    <a href="#" class="CategoryHover">ACCESSORIES</a>
+                </li>
+            </ul>
+            <div class="banner textbottom">
+                <span class="hiddenTitle">category page</span>
+                <button class="serviseButtom1"></button>
+                <button class="serviseButtom2"></button>
+                <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+            </div>
+        </section>
 
-    <!-- build:css -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- endbuild -->
-  </head>
-  <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
-        </div>
-      </main>
-      @@include('blocks/footer.html')
-    </div>
+        <section class="delivery">
+            <img class="deliveryImg BcgIMG" src="img/girl.png" alt="" width="480" height="559">
+            <div class="deliveryList">
+                <span class="hiddenTitle">delivery list</span>
+                <ul class="undotted">
+                    <li>
+                        <p class="title deliveryTitle">Delivery</p>
+                    </li>
+                    <li class="deliveruTitls deliveryChecked">
+                        <a href="">Delivery</a>
+                    </li>
+                    <li class="deliveruTitls">
+                        <a href="">Guarantee</a>
+                    </li>
+                    <li class="deliveruTitls">
+                        <a href="">Credit</a>
+                    </li>
+                </ul>
+                <p class="deliveryText">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p class="deliveryText two">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                <a href="#" class="button">LEARN MORE</a>
+            </div>
+        </section>
 
-    <script src="js/app.js" defer></script>
-  </body>
+        <section class="awards">
+            <h2 class="hiddenTitle">Awards</h2>
+            <div>
+                <img src="img/partners/image.png" alt="" width="193" height="60">
+            </div>
+            <div>
+                <img src="img/partners/image-2.png" alt="" width="179" height="61">
+            </div>
+            <div>
+                <img src="img/partners/image-3.png" alt="" width="216" height="46">
+            </div>
+            <div>
+                <img src="img/partners/image-1.png" alt="" width="211" height="40">
+            </div>
+        </section>
+
+        <section class="doubleSection">
+            <div class="doublediv1">
+                <h2 class="title titledouble1">Design Life Kids</h2>
+                <div class="double1">
+                    <div class="contentdoble1">
+                    <p class="italic title2">About Us</p>
+                    <p class="doubleText">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    <a href="#" class="button">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="doublediv2">
+                <h2 class="title">Contacts</h2>
+                <div class="double2">
+                    <div class="contentdoble2">
+                        <p class="doubleText contentdoble2Text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    </div>
+                </div>
+                <!--<img src="img/map.jpg" alt="" width="483" height="196" class="BcgIMG"> -->
+                <iframe class="BcgIMG" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc4494faae7c1a31522b86f44bee2c88df9fb36b36691928a52630763d11b12e&amp;source=constructor" width="483" height="196" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    @@include('blocks/footer.html')
+
+    <section class="popup">
+        <h2 class="contactTitleHidden">Contact</h2>
+        <form action="#" class="contactform">
+            <div>
+                <label class="labelWrapper">
+                    <span>Name</span>
+                    <input type="text" class="inputBorder" placeholder="Ivan Ivanov">
+                </label>
+            </div>
+            <div class="labelColoms">
+                <div class="labelColoms1">
+                    <label class="labelWrapper">
+                        <span>Phone</span>
+                        <input type="tel" class="inputBorder">
+                    </label>
+                </div>
+                <div>
+                    <label class="labelWrapper">
+                        <span>Email</span>
+                        <input type="email" class="inputBorder">
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label class="labelWrapper">
+                    <span>Message</span>
+                    <textarea name="textarea" cols="30" rows="10" class="textarea inputBorder"></textarea>
+                </label>
+            </div>
+
+            <fieldset class="fieldset" >
+                <legend class="agreement">Agreement</legend>
+                <ul class="undotted">
+                    <li>
+                        <label class="fieldset">
+                            <input type="checkbox" class="checkboxInput" checked>
+                            <span class="checkboxSpan">By clicking on the button, you consent to the processing of your personal data</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <button type="submit" class="button">Submit</button>
+            <button class="popupClose"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
+                </svg>
+            </button>
+        </form>
+    </section>
+
+    <script src="js/index.min.js"></script>
+</body>
 </html>

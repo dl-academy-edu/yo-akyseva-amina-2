@@ -1,0 +1,370 @@
+.banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.bannerSection{
+    position: relative;
+}
+
+.bannerSection::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #EEE4DB;
+    width: 1180px;
+    height: 385px;
+    bottom: 30px;
+    left: 0;
+    z-index: -1;
+}
+
+.bannerDOP {
+    margin-left: 31px;
+    margin-top: -125px;
+}
+
+.bannerDOP p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 27px;
+}
+
+.bannerbutton {
+    display: block;
+    width: 31px;
+    height: 3px;
+    border: none;
+    background: #D6CAC2;
+    margin-bottom: 11px;
+    padding: 0px;
+}
+
+.bannerDOP button:active,
+.bannerDOP button:hover,
+.ButtonChecked {
+    background: #715F5B;
+}
+
+.bannerDOP p {
+    opacity: 0.1;
+    margin-top: 30px;
+}
+
+.bannerDiv{
+    margin-left:41px;
+    margin-top: 55px;
+    width: 100%;
+}
+
+.bannerTitle {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.banneritalic {
+    margin: 18px auto;
+}
+
+.bannerImg{
+    margin-right: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bannerText {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #C29974;
+    color: #FFFFFF;
+    padding: 11px;
+    margin: 0;
+    margin-bottom: 90px;
+}
+
+.textbottom {
+    margin-bottom: 90px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.serviseW {
+    width: 95%;
+}
+
+.serviceList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.serviceList a {
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.serviceList li:nth-child(1) {
+    background: #DBE4DB;
+    padding: 104px 30px;
+    padding-left: 45px;
+    background-image: url('../img/sweater.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 244px 177px;
+    margin-right: 20px;
+}
+
+.serviceList li:nth-child(2) {
+    background: #EADDD3;
+    padding: 103px 34px;
+    padding-left: 42px;
+    background-image: url('../img/sock.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+
+.serviceList li:nth-child(3) {
+    background: #F8F2DA;
+    padding: 120px 103px;
+    background-image: url('../img/animal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+
+.serviceList li:nth-child(4) {
+    background: #D5D4E1;
+    padding: 120px 45px;
+    background-image: url('../img/pursone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviseButtom1 {
+    background: #E2F1F8;
+    padding: 17px;
+    background-image: url('../img/button/button-1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.serviseButtom2 {
+    background: #E2F1F8;
+    padding: 17px;
+    background-image: url('../img/button/button.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.textbottom p {
+    margin-top: 0;
+    margin-left: 22px;
+    margin-bottom: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.textbottom {
+    margin-top: 28px;
+}
+
+.delivery {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 90px;
+}
+
+.deliveryImg {
+    margin-right: 120px;
+}
+
+.deliveryList {
+    margin-top: -32px;
+}
+
+.deliveryTitle {
+    margin-bottom: 8px;
+}
+
+.deliveruTitls{
+    font-family: 'Crimson Text';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    display: block;
+    width: 180px;
+    margin-left: -60px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.deliveryText {
+    width: 82%;
+    margin-bottom: 15px;
+}
+
+.two {
+    margin-bottom: 40px;
+}
+
+.deliveruTitls:active,
+.deliveryChecked,
+.deliveruTitls:hover {
+    display: block;
+    font-weight: 700;
+    padding-right: 89px;
+    background: #E2F1F8;
+}
+
+.awards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: -125px;
+}
+
+.awards img {
+    margin-left: 127px;
+}
+
+.doubleSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 43px;
+}
+
+.doubleText {
+    width: 73%;
+}
+
+.double1 .doubleText {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.title2 {
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.doublediv1 {
+    margin-left: 30px;
+}
+
+.double1 {
+    background: #E1F0F7;
+    padding-bottom: 35px;
+    margin-top: -55px;
+    margin-left: -30px;
+    margin-right: 60px;
+}
+
+.contentdoble1 {
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 120%;
+}
+
+.double2 {
+    background: #E1F0F7;
+    margin-top: -55px;
+    padding-bottom: 85px;
+    margin-right: 35px;
+}
+
+.contentdoble2 {
+    padding-top: 30px;
+    padding-left: 25px;
+    width: 520px;
+}
+
+.contentdoble2Text {
+    width: 93%;
+}
+
+.doublediv2 h2 {
+    margin-left: 30px;
+}
+
+.doublediv2 .BcgIMG {
+    margin-left: 30px;
+    margin-top: -70px;
+}
+
+.contactTitleHidden {
+    font-size: 0%;
+}
+
+.contactform {
+    width: 680px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(125, 151, 218, 0.8);
+    display: none;
+}
+
+.popupOpen {
+    display: flex;
+}
+
+.contactform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popupClose {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    cursor: pointer;
+}
+
+.popupClose:hover {
+    opacity: 0.5;
+}
+
+.popupClose:active {
+    opacity: 0.2;
+}

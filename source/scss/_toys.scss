@@ -1,0 +1,282 @@
+.titlecategory {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.navigationSection {
+    margin-bottom: 60px;
+}
+
+.navigationPart {
+    margin-right: 50px;
+}
+
+.searchBcg {
+    background: #E5EAF8;
+}
+
+.sectionSearch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 43px;
+    padding-bottom: 28px;
+}
+
+.searchCost {
+    margin-top: -16px;
+    width: 207px;
+    margin-right: 94px;
+}
+
+.titleSearch {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.costNumber {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
+}
+
+.costNumber::before {
+    content: '';
+    display: block;
+    width: 188px;
+    height: 4px;
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    background: #72757C;
+}
+
+.costNumber::after {
+    content: '';
+    display: block;
+    width: 46px;
+    height: 4px;
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    background: #C29974;
+}
+
+.costFirstCircl {
+    position: relative;
+}
+
+.costFirstCircl::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -31px;
+    left: 40px;
+    background: #C29974;
+    border-radius: 60px;
+}
+
+.costFirstCircl::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: -23px;
+    left: 48px;
+    background: #FFFFFF;
+    border-radius: 60px;
+    z-index: 1;
+}
+
+.searchColor {
+    width: 85px;
+    margin-right: 110px;
+}
+
+.searchList li {
+    margin-bottom: 15px;
+}
+
+.checkboxSpan {
+    padding-left: 30px;
+}
+
+.radioInput {
+    display: none;
+}
+
+.radioSpan {
+    position: relative;
+    cursor: pointer;
+    padding-left: 32px;
+}
+
+.radioSpan::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #C29974;
+    border-radius: 50px;
+    background: transparent;
+    top: 0;
+    left: 0;
+}
+
+.radioSpan::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: #C29974;
+    border-radius: 50px;
+    left: 4px;
+    top: 4px;
+    opacity: 0;
+}
+
+.radioInput:checked + .radioSpan::after {
+    opacity: 1;
+}
+
+.radioList li {
+    margin-bottom: 10px;
+}
+
+.fieldsetradio {
+    margin-right: 67px;
+}
+
+.fieldsetNumbers {
+    display: flex;
+    margin-top: 7px;
+}
+
+.radioNumbers {
+    display: none;
+}
+
+.radioSpanN {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.radioLabel1 .radioSpanN {
+    padding: 7px 28px;
+}
+
+.radioLabel2 .radioSpanN, 
+.radioLabel3 .radioSpanN {
+    padding: 7px 19px;
+}
+
+.radioSpanN::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 36px;
+    background: #FFFFFF;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.radioSpanN::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 36px;
+    background: #F3D0DB;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.radioNumbers:checked + .radioSpanN::after {
+    opacity: 1;
+}
+
+.radioSpanN:hover {
+    background: #F3D0DB;
+    opacity: 0.5;
+}
+
+.searchButton {
+    margin-left: 58px;
+    margin-top: 37px;
+}
+
+.toysList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.toysList li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.toysList img {
+    width: 380px;
+    height: 385px;
+    margin-bottom: 25px;
+}
+
+.toysList a {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.toysList p {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.toysOpacity {
+    position: relative;
+}
+
+.toysOpacity:hover::after,
+.toysOpacity:active::after {
+    content: 'LEARN MORE';
+    padding: 82px 12px 96px 11px;
+    position: absolute;
+    background: #E5EAF8;
+    left: 89px;
+    top: 87px;
+    z-index: 1;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+
+.toysOpacity:active::after {
+    opacity: 0.6;
+}

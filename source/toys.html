@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Toys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    @@include('blocks/header.html')
+
+    <main>
+        <section class="navigationSection">
+            <h1 class="titlecategory container">Toy for kids</h1>
+            <div class="navigation container">
+                <a href="index.html" class="navigationPart navArrow italic">Home</a>
+                <a href="catalog.html" class="navigationPart navArrow italic">Catalog</a>
+                <p class="navigationPart italic">Toys</p>
+            </div>
+
+            <div class="searchBcg">
+                <div class="container sectionSearch">
+                    <div class="searchCost">
+                        <p class="titleSearch">Cost</p>
+                        <div class="costNumber">
+                            <p class="costFirstCircl">0</p>
+                            <p>500</p>
+                        </div>
+                    </div>
+                    
+                    <fieldset class="searchColor">
+                        <legend class="titleSearch">Color</legend>
+                        <ul class="undotted searchList">
+                            <li>
+                                <label class="">
+                                    <input type="checkbox" class="checkboxInput" checked>
+                                    <span class="checkboxSpan">Black</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="">
+                                    <input type="checkbox" class="checkboxInput">
+                                    <span class="checkboxSpan">Blue</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="">
+                                    <input type="checkbox" class="checkboxInput">
+                                    <span class="checkboxSpan">Green</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="">
+                                    <input type="checkbox" class="checkboxInput">
+                                    <span class="checkboxSpan">White</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+        
+                    <fieldset class="fieldsetradio">
+                        <legend class="titleSearch">Delivery</legend>
+                        <ul class="undotted radioList">
+                            <li>
+                                <label class="">
+                                    <input type="radio" class="radioInput" name="delivery">
+                                    <span class="radioSpan">Free shipping</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radioLabel">
+                                    <input type="radio" class="radioInput" name="delivery" checked>
+                                    <span class="radioSpan">Fast shipping</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend class="titleSearch">Amount</legend>
+                        <ul class="undotted fieldsetNumbers">
+                            <li>
+                                <label class="radioLabel1">
+                                    <input type="radio" class="radioNumbers" name="numbers" checked>
+                                    <span class="radioSpanN">0-5</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radioLabel2">
+                                    <input type="radio" class="radioNumbers" name="numbers">
+                                    <span class="radioSpanN">10-20</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radioLabel3">
+                                    <input type="radio" class="radioNumbers" name="numbers">
+                                    <span class="radioSpanN">20-50</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+        
+                    <button type="submit" class="button searchButton">Apply</button>
+                </div>
+                </div>
+        </section>
+            
+        <section class="container">
+            <h2 class="hiddenTitle">list</h2>
+        <ul class="undotted toysList">
+            <li class="toysOpacity">
+                <a href="#">
+                    <img src="img/toys/shark.png" alt="" width="380" height="385">
+                </a>
+                <a href="#">SHARKY BEAN BAG CHAIR COVER</a>
+                <p>$60.00 USD</p>
+            </li>
+            <li class="toysOpacity">
+                <a href="#">
+                    <img src="img/toys/brass.png" alt="" width="380" height="385">
+                </a>
+                <a href="#">BRASS DECO FRAMES</a>
+                <p>$66.00 USD</p>
+            </li>
+            <li class="toysOpacity">
+                <a href="#">
+                    <img src="img/toys/cibo.png" alt="" width="380" height="385">
+                </a>
+                <a href="#">CIBO FULL APRON</a>
+                <p>$60.00 USD</p>
+            </li>
+            <li class="toysOpacity">
+                <a href="#">
+                    <img src="img/toys/gatcha.png" alt="" width="380" height="385">
+                </a>
+                <a href="#">GATCHA GATCHA GUMBALL MACHINE</a>
+                <p>$56.00 USD</p>
+            </li>
+            <li class="toysOpacity">
+                <a href="#">
+                    <img src="img/toys/christmas.png" alt="" width="380" height="385">
+                </a>
+                <a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a>
+                <p>$29.00 USD</p>
+            </li>
+            <li class="toysOpacity">
+                <a href="#">
+                    <img src="img/toys/tangle.png" alt="" width="380" height="385">
+                </a>
+                <a href="#">TANGLE SPINNING TEA LIGHT</a>
+                <p>$56.00 USD</p>
+            </li>
+        </ul>
+
+        <div class="page">
+            <button class="PageBtnL"></button>
+            <a href="/toys.html" class="pageOpacity pageOpacityChecked">1</a>
+            <a href="#" class="pageOpacity">2</a>
+            <a href="#" class="pageOpacity">3</a>
+            <a href="#" class="pageOpacity">4</a>
+            <button class="PageBtnR"></button>
+        </div>
+        </section>
+    </main>
+
+    @@include('blocks/footer.html')
+
+</body>
+</html>
