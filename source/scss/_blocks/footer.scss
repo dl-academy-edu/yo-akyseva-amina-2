@@ -20,10 +20,6 @@
   margin-top: 100px;
 }
 
-.footerText {
-  margin-top: -23px;
-}
-
 .footerForm div {
   display: inline-block;
 }
@@ -37,7 +33,8 @@
 }
 
 .footerText li {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
+  margin-top: -20px;
 }
 
 .additionaly1,
@@ -55,11 +52,11 @@
 
 .EmailInput {
   background: #666666;
-  padding: 5px 13px;
+  padding: 10px 13px;
   margin-right: 0;
   border: none;
   width: 280px;
-  height: 29px;
+  height: 37px;
 }
 
 .emailButton {
@@ -68,10 +65,14 @@
   height: 40px;
 }
 
+.footerEmail {
+  margin-top: -25px;
+}
+
 .footerSochil {
   display: flex;
   align-items: center;
-  margin-top: 8px;
+  margin-top: 15px;
 }
 
 .footerSochil li {
@@ -82,8 +83,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 6px;
   border-top: 1px solid #666666;
+  padding-top: 5px;
+  margin-top: -15px;
   padding-bottom: 85px;
 }
 
@@ -94,7 +96,7 @@
 .EmailInput:hover,
 .EmailInput:focus {
   border: 1px solid #FFFDFD;
-  height: 27px;
+  height: 36px;
 }
 
 .footerOpacity:hover,
