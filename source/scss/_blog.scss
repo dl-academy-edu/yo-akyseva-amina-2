@@ -1,0 +1,55 @@
+.titleBlog {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    padding-top: 15px;
+}
+
+.blogList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.blogList li {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    margin-bottom: 16px;
+}
+
+.blogList img {
+    width: 380px;
+    height: 220px;
+    margin-bottom: 0;
+}
+
+.blogList a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: -3px;
+}
+
+.pBlog {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.dataBlog {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #818181;
+    margin-bottom: 8px;
+}
+
+.blogOpacity:hover,
+.blogOpacity:active {
+    text-decoration: underline solid #1E0606;;
+}

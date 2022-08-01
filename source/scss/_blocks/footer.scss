@@ -1,10 +1,115 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
 .footer {
-  background-color: #151515;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 100px;
+  background: #434343;
+}
+
+.footerList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.footerTitleBorder {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #666666;
+}
+
+.footer .fonts {
+  color: #AAAAAA;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.footerForm div {
+  display: inline-block;
+}
+
+.footer a , .text {
+  color: #FFFFFF;
+}
+
+.footer .Ablack {
+  color: #A2A2A2;
+}
+
+.footerText li {
+  margin-bottom: 35px;
+  margin-top: -20px;
+}
+
+.additionaly1,
+.additionaly2,
+.additionaly3 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.EmailSpan {
+  font-size: 0;
+}
+
+.EmailInput {
+  background: #666666;
+  padding: 10px 13px;
+  margin-right: 0;
+  border: none;
+  width: 280px;
+  height: 37px;
+}
+
+.emailButton {
+  margin-left: -20px;
+  width: 81px;
+  height: 40px;
+}
+
+.footerEmail {
+  margin-top: -25px;
+}
+
+.footerSochil {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footerSochil li {
+  margin-right: 10px;
+}
+
+.footerList2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #666666;
+  padding-top: 5px;
+  margin-top: -15px;
+  padding-bottom: 85px;
+}
+
+.footerdivWidth {
+  width: 380px;
+}
+
+.EmailInput:hover,
+.EmailInput:focus {
+  border: 1px solid #FFFDFD;
+  height: 36px;
+}
+
+.footerOpacity:hover,
+.footerOpacity:focus {
+  opacity: 0.5;
+}
+
+.footerOpacity:active {
+  opacity: 0.2;
+}
+
+.footerList2 .footerdivWidth a:hover,
+.footerList2 .footerdivWidth a:active {
+  text-decoration: underline solid #FFFFFF;
+  color: #FFFFFF;
 }

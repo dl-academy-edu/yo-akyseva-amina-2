@@ -1,0 +1,97 @@
+.titlecategory {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+}
+
+.serviceList2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+.serviceList2 a {
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.serviceList2 li:nth-child(1) {
+    background: #DBE4DB;
+    padding: 100px 40px;
+    background-image: url('../img/sweater.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 244px 177px;
+}
+
+.serviceList2 li:nth-child(2) {
+    background: #EADDD3;
+    padding: 100px 35px;
+    background-image: url('../img/sock.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.serviceList2 li:nth-child(3) {
+    background: #F8F2DA;
+    padding: 120px 100px;
+    background-image: url('../img/animal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.serviceList2 li:nth-child(4) {
+    background: #D5D4E1;
+    padding: 120px 44px;
+    background-image: url('../img/pursone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+}
+
+.serviceList2 li:nth-child(5) {
+    background: #F3D0DB;
+    padding: 120px 105px;
+    background-image: url('../img/flamingo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviceList2 li:nth-child(6) {
+    background: #E5EAF8;
+    padding: 103px 20px;
+    background-image: url('../img/girlsweater.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviseW {
+    width: 95%;
+}
+
+.serviceList2 li {
+    margin-right: 20px;
+    margin-bottom: 23px;
+}
+
+.textCatalogSection {
+    margin-left: 200px;
+    margin-bottom: 52px;
+}
+
+.textCatalogSection h2 {
+    margin-bottom: 25px;
+}
+
+.textCatalogSection p {
+    width: 67%;
+}
