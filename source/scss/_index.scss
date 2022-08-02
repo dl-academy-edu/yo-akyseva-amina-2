@@ -333,10 +333,6 @@
     font-size: 0%;
 }
 
-.contactform {
-    width: 680px;
-}
-
 .popup {
     position: fixed;
     top: 0;
@@ -351,7 +347,7 @@
     display: flex;
 }
 
-.contactform {
+.contactFormPopup {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -362,8 +358,8 @@
     border: none;
     background: transparent;
     position: absolute;
-    right: -30px;
-    top: 0;
+    right: 25%;
+    top: 14%;
     cursor: pointer;
 }
 

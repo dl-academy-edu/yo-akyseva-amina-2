@@ -1,0 +1,52 @@
+.toysList li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.toysList img {
+    width: 380px;
+    height: 385px;
+    margin-bottom: 25px;
+}
+
+.toysList a {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.toysList p {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.toysOpacity {
+    position: relative;
+}
+
+.toysOpacity:hover::after,
+.toysOpacity:active::after {
+    content: 'LEARN MORE';
+    padding: 82px 12px 96px 11px;
+    position: absolute;
+    background: #E5EAF8;
+    left: 89px;
+    top: 87px;
+    z-index: 1;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+
+.toysOpacity:active::after {
+    opacity: 0.6;
+}

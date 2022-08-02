@@ -1,0 +1,134 @@
+.contactform {
+    background: #E5EAF8;
+    padding: 42px 40px;
+    margin: 0 auto;
+}
+
+input {
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+    padding: 14px 20px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.inputBorder {
+    border: 1px solid #ccc;
+}
+
+.inputBorder:active,
+.inputBorder:hover,
+.inputBorder:focus {
+    border: 1px solid #C29974;
+    z-index: 1;
+}
+
+input:disabled,
+.textarea:disabled {
+    opacity: 0.2;
+}
+
+.labelWrapper {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 3px;
+}
+
+.labelColoms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelColoms1 {
+    margin-right: 20px;
+}
+
+.labelColoms .labelWrapper {
+    width: 290px;
+}
+
+.agreement {
+    font-size: 0%;
+}
+
+.fieldset {
+    margin: 0;
+    margin-top: -5px;
+    padding: 0;
+    border: none;
+    margin-bottom: 19px;
+}
+
+.fieldset span {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.checkboxInput {
+    display: none;
+}
+
+.checkboxSpan {
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+}
+
+.checkboxSpan::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    background: transparent;
+    top: 0;
+    left: 0;
+}
+
+.checkboxSpan::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/navigation/okey.svg');
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.checkboxInput:checked + .checkboxSpan::after {
+    opacity: 1;
+}
+
+.radioSpan:hover,
+.radioSpan:active,
+.checkboxSpan:hover,
+.checkboxSpan:active,
+.checkboxSpan:focus,
+.radioSpan:focus {
+    text-decoration: underline solid #1E0606;
+}
+
+.textarea {
+    outline: none;
+    max-height: 140px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    resize: none;
+}

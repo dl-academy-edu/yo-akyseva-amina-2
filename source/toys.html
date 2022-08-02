@@ -112,48 +112,42 @@
         <section class="container">
             <h2 class="hiddenTitle">list</h2>
         <ul class="undotted toysList">
-            <li class="toysOpacity">
-                <a href="#">
-                    <img src="img/toys/shark.png" alt="" width="380" height="385">
-                </a>
-                <a href="#">SHARKY BEAN BAG CHAIR COVER</a>
-                <p>$60.00 USD</p>
-            </li>
-            <li class="toysOpacity">
-                <a href="#">
-                    <img src="img/toys/brass.png" alt="" width="380" height="385">
-                </a>
-                <a href="#">BRASS DECO FRAMES</a>
-                <p>$66.00 USD</p>
-            </li>
-            <li class="toysOpacity">
-                <a href="#">
-                    <img src="img/toys/cibo.png" alt="" width="380" height="385">
-                </a>
-                <a href="#">CIBO FULL APRON</a>
-                <p>$60.00 USD</p>
-            </li>
-            <li class="toysOpacity">
-                <a href="#">
-                    <img src="img/toys/gatcha.png" alt="" width="380" height="385">
-                </a>
-                <a href="#">GATCHA GATCHA GUMBALL MACHINE</a>
-                <p>$56.00 USD</p>
-            </li>
-            <li class="toysOpacity">
-                <a href="#">
-                    <img src="img/toys/christmas.png" alt="" width="380" height="385">
-                </a>
-                <a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a>
-                <p>$29.00 USD</p>
-            </li>
-            <li class="toysOpacity">
-                <a href="#">
-                    <img src="img/toys/tangle.png" alt="" width="380" height="385">
-                </a>
-                <a href="#">TANGLE SPINNING TEA LIGHT</a>
-                <p>$56.00 USD</p>
-            </li>
+            @@include('blocks/toys_list.html', {
+                "link": "#",
+                "img": "img/toys/shark.png",
+                "text": "SHARKY BEAN BAG CHAIR COVER",
+                "price": "$60.00 USD"
+            })
+            @@include('blocks/toys_list.html', {
+                "link": "#",
+                "img": "img/toys/brass.png",
+                "text": "BRASS DECO FRAMES",
+                "price": "$66.00 USD"
+            })
+            @@include('blocks/toys_list.html', {
+                "link": "#",
+                "img": "img/toys/cibo.png",
+                "text": "CIBO FULL APRON",
+                "price": "$60.00 USD"
+            })
+            @@include('blocks/toys_list.html', {
+                "link": "#",
+                "img": "img/toys/gatcha.png",
+                "text": "GATCHA GATCHA GUMBALL MACHINE",
+                "price": "$56.00 USD"
+            })
+            @@include('blocks/toys_list.html', {
+                "link": "#",
+                "img": "img/toys/christmas.png",
+                "text": "CHRISTMAS ADVENT SCENTED CANDLE",
+                "price": "$29.00 USD"
+            })
+            @@include('blocks/toys_list.html', {
+                "link": "#",
+                "img": "img/toys/tangle.png",
+                "text": "TANGLE SPINNING TEA LIGHT",
+                "price": "$56.00 USD"
+            })
         </ul>
 
         <div class="page">
