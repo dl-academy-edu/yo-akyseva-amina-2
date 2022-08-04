@@ -24,12 +24,12 @@
     text-transform: uppercase;
 }
 
-.toysOpacity {
+.toys_opacity {
     position: relative;
 }
 
-.toysOpacity:hover::after,
-.toysOpacity:active::after {
+.toys_opacity:hover::after,
+.toys_opacity:active::after {
     content: 'LEARN MORE';
     padding: 82px 12px 96px 11px;
     position: absolute;
@@ -47,6 +47,6 @@
 }
 
 
-.toysOpacity:active::after {
+.toys_opacity:active::after {
     opacity: 0.6;
 }

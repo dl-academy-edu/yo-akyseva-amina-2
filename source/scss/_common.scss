@@ -21,6 +21,16 @@ body {
     text-transform: uppercase;
 }
 
+.title_montserrat {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -31,12 +41,12 @@ a {
     color: #1E0606;
 }
 
-.headerOpasity:hover,
-.headerOpasity:focus {
+.header_opasity:hover,
+.header_opasity:focus {
     opacity: 0.5;
 }
 
-.headerOpasity:active {
+.header_opasity:active {
     opacity: 0.2;
 }
 
@@ -47,7 +57,7 @@ a {
     margin-bottom: 41px;
 }
 
-.headerContact {
+.header__contact {
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
@@ -55,7 +65,7 @@ a {
     margin-left: 28px;
 }
 
-.header .menu {
+.header .header__menu {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -66,11 +76,11 @@ a {
     margin: 0 auto 0 60px;
 }
 
-.menu a{
+.header__menu a{
     margin-right: 20px;
 }
 
-.hiddenTitle {
+.title_hidden {
     width: 0;
     height: 0;
     font-size: 0;
@@ -108,11 +118,11 @@ a {
     background: #C7C1C1;
 }
 
-.additionaly1 p {
+.footer__additionaly1 p {
     margin-right: 25px;
 }
 
-.additionaly1:hover::after {
+.footer__additionaly1:hover::after {
     content: '';
     display: block;
     position: absolute;
@@ -123,32 +133,32 @@ a {
     left: 146px;
 }
 
-.additionaly1:hover p {
+.footer__additionaly1:hover p {
     color: #C29974;
 }
 
 /* Навигация */
 
-.navigation {
+.navigation_div {
     margin-top: -6px;
     display: flex;
     align-items: center;
     margin-bottom: 28px;
 }
 
-.navigationPart {
+.navigation_div a {
     margin-right: 46px;
 }
 
-.navigation p {
+.navigation_div p {
     color: #8E8282;
 }
 
-.navArrow {
+.navigation__pseudo {
     position: relative;
 }
 
-.navArrow::after {
+.navigation__pseudo::after {
     content: '';
     display: block;
     position: absolute;
@@ -177,16 +187,16 @@ a {
     margin-left: 33px;
 }
 
-.pageOpacityChecked {
+.page_opacity_checked {
     color: #C29974;
 }
 
-.pageOpacity:hover,
-.pageOpacity:focus {
+.page_opacity:hover,
+.page_opacity:focus {
     opacity: 0.5;
 }
 
-.PageBtnL , .PageBtnR {
+.button_page_left , .button_page_right {
     display: block;
     border: none;
     background-repeat: no-repeat;
@@ -197,13 +207,13 @@ a {
     cursor: pointer;
 }
 
-.PageBtnL {
+.button_page_left {
     background-image: url('../img/button/pbtnl.svg');
     margin-right: auto;
     margin-left: 0;
 }
 
-.PageBtnR {
+.button_page_right {
     background-image: url('../img/button/pbynr.svg');
     margin-right: 0;
     margin-left: auto;
@@ -215,28 +225,28 @@ a {
     background: #E1F0F7;
 }
 
-.PageBtnR:hover,
-.PageBtnR:focus {
+.button_page_right:hover,
+.button_page_right:focus {
     background-image: url('../img/button/arrowrighthover.svg');
     margin-right: 0;
     margin-left: auto;
 }
 
-.PageBtnL:hover,
-.PageBtnL:focus{
+.button_page_left:hover,
+.button_page_left:focus{
     background-image: url('../img/button/arrowlefthover.svg');
     margin-right: auto;
     margin-left: 0;
 }
 
-.PageBtnR:hover:active,
-.PageBtnL:hover:active {
+.button_page_right:hover:active,
+.button_page_left:hover:active {
     opacity: 0.6;
 }
 
-.CategoryHover:active,
-.CategoryHover:hover,
-.CategoryHover:focus {
+.listcategory__a:active,
+.listcategory__a:hover,
+.listcategory__a:focus {
     text-decoration: underline solid #FFFFFF;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }

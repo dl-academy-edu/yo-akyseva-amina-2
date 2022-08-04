@@ -19,12 +19,12 @@
     margin-bottom: -3px;
 }
 
-.pBlog {
+.blog__p {
     font-size: 18px;
     line-height: 25px;
 }
 
-.dataBlog {
+.blog__data {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -32,7 +32,7 @@
     margin-bottom: 8px;
 }
 
-.blogOpacity:hover,
-.blogOpacity:active {
+.blog__opacity:hover,
+.blog__opacity:active {
     text-decoration: underline solid #1E0606;;
 }

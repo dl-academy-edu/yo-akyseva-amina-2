@@ -1,4 +1,4 @@
-.contactform {
+.form {
     background: #E5EAF8;
     padding: 42px 40px;
     margin: 0 auto;
@@ -15,13 +15,13 @@ input {
     margin-bottom: 20px;
 }
 
-.inputBorder {
+.input_border {
     border: 1px solid #ccc;
 }
 
-.inputBorder:active,
-.inputBorder:hover,
-.inputBorder:focus {
+.input_border:active,
+.input_border:hover,
+.input_border:focus {
     border: 1px solid #C29974;
     z-index: 1;
 }
@@ -31,7 +31,7 @@ input:disabled,
     opacity: 0.2;
 }
 
-.labelWrapper {
+.form_label {
     display: flex;
     flex-direction: column;
     font-weight: 400;
@@ -40,20 +40,20 @@ input:disabled,
     margin-bottom: 3px;
 }
 
-.labelColoms {
+.phone {
     display: flex;
     justify-content: space-between;
 }
 
-.labelColoms1 {
+.phone__div {
     margin-right: 20px;
 }
 
-.labelColoms .labelWrapper {
+.phone .form_label {
     width: 290px;
 }
 
-.agreement {
+.fieldset {
     font-size: 0%;
 }
 
@@ -75,17 +75,17 @@ fieldset {
     padding: 0;
 }
 
-.checkboxInput {
+.checkbox__input {
     display: none;
 }
 
-.checkboxSpan {
+.checkbox__span {
     position: relative;
     cursor: pointer;
     padding-left: 35px;
 }
 
-.checkboxSpan::before {
+.checkbox__span::before {
     content: '';
     position: absolute;
     display: block;
@@ -98,7 +98,7 @@ fieldset {
     left: 0;
 }
 
-.checkboxSpan::after {
+.checkbox__span::after {
     content: '';
     position: absolute;
     display: block;
@@ -111,16 +111,16 @@ fieldset {
     opacity: 0;
 }
 
-.checkboxInput:checked + .checkboxSpan::after {
+.checkbox__input:checked + .checkbox__span::after {
     opacity: 1;
 }
 
-.radioSpan:hover,
-.radioSpan:active,
-.checkboxSpan:hover,
-.checkboxSpan:active,
-.checkboxSpan:focus,
-.radioSpan:focus {
+.radio_span:hover,
+.radio_span:active,
+.checkbox__span:hover,
+.checkbox__span:active,
+.checkbox__span:focus,
+.radio_span:focus {
     text-decoration: underline solid #1E0606;
 }
 

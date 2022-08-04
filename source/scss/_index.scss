@@ -5,6 +5,10 @@
     margin-top: 32px;
 }
 
+.category__page {
+    @extend .banner
+}
+
 .bannerZindex {
     z-index: 5;
 }
@@ -25,19 +29,19 @@
     z-index: 0;
 }
 
-.bannerDOP {
+.banner__page {
     margin-left: 31px;
     margin-top: -125px;
 }
 
-.bannerDOP p {
+.banner__page  p {
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 60px;
     margin-bottom: 27px;
 }
 
-.bannerbutton {
+.banner__button {
     display: block;
     width: 31px;
     height: 3px;
@@ -47,24 +51,24 @@
     padding: 0px;
 }
 
-.bannerDOP button:active,
-.bannerDOP button:hover,
+.banner__page  button:active,
+.banner__page  button:hover,
 .ButtonChecked {
     background: #715F5B;
 }
 
-.bannerDOP p {
+.banner__page  p {
     opacity: 0.1;
     margin-top: 30px;
 }
 
-.bannerDiv{
+.banner__content{
     margin-left:41px;
     margin-top: 70px;
     width: 100%;
 }
 
-.bannerTitle {
+.banner__Title {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 40px;
@@ -74,17 +78,17 @@
     margin-top: 15px;
 }
 
-.banneritalic {
+.banner__text {
     margin: 18px auto;
 }
 
-.bannerImg{
+.banner__Img{
     margin-right: 100px;
     display: flex;
     align-items: flex-end;
 }
 
-.bannerText {
+.banner__text2 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -111,13 +115,13 @@
     width: 95%;
 }
 
-.serviceList {
+.listcategory {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0px;
 }
 
-.serviceList a {
+.listcategory a {
     display: block;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -128,7 +132,7 @@
     color: #FFFFFF;
 }
 
-.serviceList li:nth-child(1) {
+.listcategory li:nth-child(1) {
     background: #DBE4DB;
     padding: 104px 30px;
     padding-left: 45px;
@@ -139,7 +143,7 @@
     margin-right: 20px;
 }
 
-.serviceList li:nth-child(2) {
+.listcategory li:nth-child(2) {
     background: #EADDD3;
     padding: 103px 34px;
     padding-left: 42px;
@@ -150,7 +154,7 @@
 }
 
 
-.serviceList li:nth-child(3) {
+.listcategory li:nth-child(3) {
     background: #F8F2DA;
     padding: 120px 103px;
     background-image: url('../img/animal.png');
@@ -160,7 +164,7 @@
 }
 
 
-.serviceList li:nth-child(4) {
+.listcategory li:nth-child(4) {
     background: #D5D4E1;
     padding: 120px 45px;
     background-image: url('../img/pursone.png');
@@ -168,7 +172,7 @@
     background-repeat: no-repeat;
 }
 
-.serviseButtom1 {
+.category__button1 {
     background: #E2F1F8;
     padding: 17px;
     background-image: url('../img/button/button-1.svg');
@@ -178,7 +182,7 @@
     cursor: pointer;
 }
 
-.serviseButtom2 {
+.category__button2 {
     background: #E2F1F8;
     padding: 17px;
     background-image: url('../img/button/button.svg');
@@ -207,19 +211,19 @@
     margin-bottom: 90px;
 }
 
-.deliveryImg {
+.delivery__Img {
     margin-right: 120px;
 }
 
-.deliveryList {
+.delivery_List {
     margin-top: -32px;
 }
 
-.deliveryTitle {
+.delivery_List__title {
     margin-bottom: 8px;
 }
 
-.deliveruTitls{
+.delivery_List__titls{
     font-family: 'Crimson Text';
     font-weight: 400;
     font-size: 26px;
@@ -232,7 +236,7 @@
     padding-bottom: 10px;
 }
 
-.deliveryText {
+.delivery__Text {
     width: 82%;
     margin-bottom: 15px;
 }
@@ -241,9 +245,9 @@
     margin-bottom: 40px;
 }
 
-.deliveruTitls:active,
+.delivery_List__titls:active,
 .deliveryChecked,
-.deliveruTitls:hover {
+.delivery_List__titls:hover {
     display: block;
     font-weight: 700;
     padding-right: 260px;
@@ -272,23 +276,23 @@
     width: 73%;
 }
 
-.double1 .doubleText {
+.innerdiv1 .doubleText {
     margin-bottom: 30px;
     margin-top: 0;
 }
 
-.title2 {
+.innerdiv1_text {
     font-weight: 400;
     font-size: 26px;
     margin-top: 7px;
     margin-bottom: 15px;
 }
 
-.doublediv1 {
+.doubleSection__div1 {
     margin-left: 30px;
 }
 
-.double1 {
+.innerdiv1 {
     background: #E1F0F7;
     padding-bottom: 35px;
     margin-top: -55px;
@@ -296,34 +300,34 @@
     margin-right: 60px;
 }
 
-.contentdoble1 {
+.innerdiv1__content {
     padding-top: 30px;
     padding-left: 30px;
     width: 127%;
 }
 
-.double2 {
+.innerdiv2 {
     background: #E1F0F7;
     margin-top: -55px;
     padding-bottom: 85px;
     margin-left: -10px;
 }
 
-.contentdoble2 {
+.innerdiv2__content {
     padding-top: 30px;
     padding-left: 25px;
     width: 520px;
 }
 
-.contentdoble2Text {
+.innerdiv2__contentText {
     width: 93%;
 }
 
-.doublediv2 h2 {
+.doubleSection__div2 h2 {
     margin-left: 20px;
 }
 
-.doublediv2 .BcgIMG {
+.doubleSection__div2 .BcgIMG {
     margin-left: 30px;
     margin-top: -70px;
     margin-right: 60px;
@@ -347,7 +351,7 @@
     display: flex;
 }
 
-.contactFormPopup {
+.formPopup {
     position: absolute;
     top: 50%;
     left: 50%;

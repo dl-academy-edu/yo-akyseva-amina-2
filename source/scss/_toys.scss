@@ -1,26 +1,14 @@
-.titlecategory {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
-    margin-bottom: 0px;
-    padding-top: 15px;
-    text-transform: uppercase;
-}
 
-.navigationSection {
+
+.navigation {
     margin-bottom: 60px;
 }
 
-.navigationPart {
-    margin-right: 50px;
-}
-
-.searchBcg {
+.search {
     background: #E5EAF8;
 }
 
-.sectionSearch {
+.search_section {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -28,25 +16,25 @@
     padding-bottom: 28px;
 }
 
-.searchCost {
+.cost {
     margin-top: -16px;
     width: 207px;
     margin-right: 94px;
 }
 
-.titleSearch {
+.title_search {
     font-weight: 700;
     margin-bottom: 15px;
 }
 
-.costNumber {
+.number {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
     position: relative;
 }
 
-.costNumber::before {
+.number::before {
     content: '';
     display: block;
     width: 188px;
@@ -57,7 +45,7 @@
     background: #72757C;
 }
 
-.costNumber::after {
+.number::after {
     content: '';
     display: block;
     width: 46px;
@@ -68,11 +56,11 @@
     background: #C29974;
 }
 
-.costFirstCircl {
+.number__p {
     position: relative;
 }
 
-.costFirstCircl::before {
+.number__p::before {
     content: '';
     display: block;
     width: 24px;
@@ -84,7 +72,7 @@
     border-radius: 60px;
 }
 
-.costFirstCircl::after {
+.number__p::after {
     content: '';
     display: block;
     width: 8px;
@@ -97,30 +85,30 @@
     z-index: 1;
 }
 
-.searchColor {
+.color {
     width: 85px;
     margin-right: 110px;
 }
 
-.searchList li {
+.color__list li {
     margin-bottom: 15px;
 }
 
-.checkboxSpan {
+.checkbox__span {
     padding-left: 30px;
 }
 
-.radioInput {
+.radio_input {
     display: none;
 }
 
-.radioSpan {
+.radio_span {
     position: relative;
     cursor: pointer;
     padding-left: 32px;
 }
 
-.radioSpan::before {
+.radio_span::before {
     content: '';
     position: absolute;
     display: block;
@@ -133,7 +121,7 @@
     left: 0;
 }
 
-.radioSpan::after {
+.radio_span::after {
     content: '';
     position: absolute;
     display: block;
@@ -146,43 +134,43 @@
     opacity: 0;
 }
 
-.radioInput:checked + .radioSpan::after {
+.radio_input:checked + .radio_span::after {
     opacity: 1;
 }
 
-.radioList li {
+.search__delivery_radio li {
     margin-bottom: 10px;
 }
 
-.fieldsetradio {
+.search__delivery {
     margin-right: 67px;
 }
 
-.fieldsetNumbers {
+.amount {
     display: flex;
     margin-top: 7px;
 }
 
-.radioNumbers {
+.amount__input {
     display: none;
 }
 
-.radioSpanN {
+.amount__span {
     position: relative;
     cursor: pointer;
     z-index: 1;
 }
 
-.radioLabel1 .radioSpanN {
+.amount__label1 .amount__span {
     padding: 7px 28px;
 }
 
-.radioLabel2 .radioSpanN, 
-.radioLabel3 .radioSpanN {
+.amount__label2 .amount__span, 
+.radio_label3 .amount__span {
     padding: 7px 19px;
 }
 
-.radioSpanN::before {
+.amount__span::before {
     content: '';
     position: absolute;
     display: block;
@@ -194,7 +182,7 @@
     z-index: -1;
 }
 
-.radioSpanN::after {
+.amount__span::after {
     content: '';
     position: absolute;
     display: block;
@@ -207,16 +195,16 @@
     opacity: 0;
 }
 
-.radioNumbers:checked + .radioSpanN::after {
+.amount__input:checked + .amount__span::after {
     opacity: 1;
 }
 
-.radioSpanN:hover {
+.amount__span:hover {
     background: #F3D0DB;
     opacity: 0.5;
 }
 
-.searchButton {
+.button_search {
     margin-left: 58px;
     margin-top: 37px;
 }

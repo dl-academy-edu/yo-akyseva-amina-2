@@ -14,103 +14,103 @@
     @@include('blocks/header.html')
 
     <main>
-        <section class="navigationSection">
-            <h1 class="titlecategory container">Toy for kids</h1>
-            <div class="navigation container">
-                <a href="index.html" class="navigationPart navArrow italic">Home</a>
-                <a href="catalog.html" class="navigationPart navArrow italic">Catalog</a>
-                <p class="navigationPart italic">Toys</p>
+        <section class="navigation">
+            <h1 class="title_montserrat container">Toy for kids</h1>
+            <div class="navigation_div container">
+                <a href="index.html" class="navigation__pseudo italic">Home</a>
+                <a href="catalog.html" class="navigation__pseudo italic">Catalog</a>
+                <p class=" italic">Toys</p>
             </div>
 
-            <div class="searchBcg">
-                <div class="container sectionSearch">
-                    <div class="searchCost">
-                        <p class="titleSearch">Cost</p>
-                        <div class="costNumber">
-                            <p class="costFirstCircl">0</p>
+            <div class="search">
+                <div class="container search_section">
+                    <div class="cost">
+                        <p class="title_search">Cost</p>
+                        <div class="number">
+                            <p class="number__p">0</p>
                             <p>500</p>
                         </div>
                     </div>
                     
-                    <fieldset class="searchColor">
-                        <legend class="titleSearch">Color</legend>
-                        <ul class="undotted searchList">
+                    <fieldset class="color">
+                        <legend class="title_search">color</legend>
+                        <ul class="undotted color__list">
                             <li>
                                 <label class="">
-                                    <input type="checkbox" class="checkboxInput" checked>
-                                    <span class="checkboxSpan">Black</span>
+                                    <input type="checkbox" class="checkbox__input" checked>
+                                    <span class="checkbox__span">Black</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="">
-                                    <input type="checkbox" class="checkboxInput">
-                                    <span class="checkboxSpan">Blue</span>
+                                    <input type="checkbox" class="checkbox__input">
+                                    <span class="checkbox__span">Blue</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="">
-                                    <input type="checkbox" class="checkboxInput">
-                                    <span class="checkboxSpan">Green</span>
+                                    <input type="checkbox" class="checkbox__input">
+                                    <span class="checkbox__span">Green</span>
                                 </label>
                             </li>
                             <li>
                                 <label class="">
-                                    <input type="checkbox" class="checkboxInput">
-                                    <span class="checkboxSpan">White</span>
+                                    <input type="checkbox" class="checkbox__input">
+                                    <span class="checkbox__span">White</span>
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
         
-                    <fieldset class="fieldsetradio">
-                        <legend class="titleSearch">Delivery</legend>
-                        <ul class="undotted radioList">
+                    <fieldset class="search__delivery">
+                        <legend class="title_search">Delivery</legend>
+                        <ul class="undotted search__delivery_radio">
                             <li>
                                 <label class="">
-                                    <input type="radio" class="radioInput" name="delivery">
-                                    <span class="radioSpan">Free shipping</span>
+                                    <input type="radio" class="radio_input" name="delivery">
+                                    <span class="radio_span">Free shipping</span>
                                 </label>
                             </li>
                             <li>
-                                <label class="radioLabel">
-                                    <input type="radio" class="radioInput" name="delivery" checked>
-                                    <span class="radioSpan">Fast shipping</span>
+                                <label class="radio_label">
+                                    <input type="radio" class="radio_input" name="delivery" checked>
+                                    <span class="radio_span">Fast shipping</span>
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
         
                     <fieldset>
-                        <legend class="titleSearch">Amount</legend>
-                        <ul class="undotted fieldsetNumbers">
+                        <legend class="title_search">Amount</legend>
+                        <ul class="undotted amount">
                             <li>
-                                <label class="radioLabel1">
-                                    <input type="radio" class="radioNumbers" name="numbers" checked>
-                                    <span class="radioSpanN">0-5</span>
+                                <label class="amount__label1">
+                                    <input type="radio" class="amount__input" name="numbers" checked>
+                                    <span class="amount__span">0-5</span>
                                 </label>
                             </li>
                             <li>
-                                <label class="radioLabel2">
-                                    <input type="radio" class="radioNumbers" name="numbers">
-                                    <span class="radioSpanN">10-20</span>
+                                <label class="amount__label2">
+                                    <input type="radio" class="amount__input" name="numbers">
+                                    <span class="amount__span">10-20</span>
                                 </label>
                             </li>
                             <li>
-                                <label class="radioLabel3">
-                                    <input type="radio" class="radioNumbers" name="numbers">
-                                    <span class="radioSpanN">20-50</span>
+                                <label class="radio_label3">
+                                    <input type="radio" class="amount__input" name="numbers">
+                                    <span class="amount__span">20-50</span>
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
         
-                    <button type="submit" class="button searchButton">Apply</button>
+                    <button type="submit" class="button button_search">Apply</button>
                 </div>
                 </div>
         </section>
             
         <section class="container">
-            <h2 class="hiddenTitle">list</h2>
+            <h2 class="title_hidden">list</h2>
         <ul class="undotted toysList">
             @@include('blocks/toys_list.html', {
                 "link": "#",
@@ -151,12 +151,12 @@
         </ul>
 
         <div class="page">
-            <button class="PageBtnL"></button>
-            <a href="/toys.html" class="pageOpacity pageOpacityChecked">1</a>
-            <a href="#" class="pageOpacity">2</a>
-            <a href="#" class="pageOpacity">3</a>
-            <a href="#" class="pageOpacity">4</a>
-            <button class="PageBtnR"></button>
+            <button class="button_page_left"></button>
+            <a href="/toys.html" class="page_opacity page_opacity_checked">1</a>
+            <a href="#" class="page_opacity">2</a>
+            <a href="#" class="page_opacity">3</a>
+            <a href="#" class="page_opacity">4</a>
+            <button class="button_page_right"></button>
         </div>
         </section>
     </main>
