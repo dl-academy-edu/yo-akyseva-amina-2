@@ -1,34 +1,24 @@
 .contact {
     margin-top: 55px;
-}
-
-.title_contact {
-    font-size: 40px;
-    line-height: 49px;
-    margin-bottom: 0px;
-}
-
-.contact__div {
-    display: flex;
-    margin-bottom: 60px;
-}
-
-.contact__text {
-    margin-left: 120px;
-    margin-top: -15px;
-}
-
-.contact__text_small {
-    margin-bottom: 20px;
-}
-
-.contact__text_big {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 34px;
-    text-transform: uppercase;
-    color: #C29974;
-    margin-top: 0;
+    &__div {
+        display: flex;
+        margin-bottom: 60px;
+    }
+    &__text {
+        margin-left: 120px;
+        margin-top: -15px;
+    }
+    &__text_small {
+        margin-bottom: 20px;
+    }
+    &__text_big {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #C29974;
+        margin-top: 0;
+    }   
 }

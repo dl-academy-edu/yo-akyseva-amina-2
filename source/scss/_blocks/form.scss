@@ -43,18 +43,13 @@ input:disabled,
 .phone {
     display: flex;
     justify-content: space-between;
-}
-
-.phone__div {
-    margin-right: 20px;
+    &__div {
+        margin-right: 20px;
+    }
 }
 
 .phone .form_label {
     width: 290px;
-}
-
-.fieldset {
-    font-size: 0%;
 }
 
 .fieldset {
@@ -63,16 +58,14 @@ input:disabled,
     padding: 0;
     border: none;
     margin-bottom: 19px;
+    font-size: 0%;
+    border: none;
+    padding: 0;
 }
 
 .fieldset span {
     font-size: 14px;
     line-height: 19px;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
 }
 
 .checkbox__input {
@@ -83,32 +76,30 @@ fieldset {
     position: relative;
     cursor: pointer;
     padding-left: 35px;
-}
-
-.checkbox__span::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #C29974;
-    border-radius: 3px;
-    background: transparent;
-    top: 0;
-    left: 0;
-}
-
-.checkbox__span::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-image: url('../img/navigation/okey.svg');
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    opacity: 0;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #C29974;
+        border-radius: 3px;
+        background: transparent;
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url('../img/navigation/okey.svg');
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        opacity: 0;
+    }
 }
 
 .checkbox__input:checked + .checkbox__span::after {

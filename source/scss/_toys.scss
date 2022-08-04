@@ -1,19 +1,12 @@
-
-
-.navigation {
-    margin-bottom: 60px;
-}
-
 .search {
     background: #E5EAF8;
-}
-
-.search_section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 43px;
-    padding-bottom: 28px;
+    &_section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 43px;
+        padding-bottom: 28px;
+    }
 }
 
 .cost {
@@ -22,76 +15,65 @@
     margin-right: 94px;
 }
 
-.title_search {
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
 .number {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
     position: relative;
-}
-
-.number::before {
-    content: '';
-    display: block;
-    width: 188px;
-    height: 4px;
-    position: absolute;
-    top: -5px;
-    left: 6px;
-    background: #72757C;
-}
-
-.number::after {
-    content: '';
-    display: block;
-    width: 46px;
-    height: 4px;
-    position: absolute;
-    top: -5px;
-    left: 6px;
-    background: #C29974;
-}
-
-.number__p {
-    position: relative;
-}
-
-.number__p::before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: -31px;
-    left: 40px;
-    background: #C29974;
-    border-radius: 60px;
-}
-
-.number__p::after {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: -23px;
-    left: 48px;
-    background: #FFFFFF;
-    border-radius: 60px;
-    z-index: 1;
+    &::before {
+        content: '';
+        display: block;
+        width: 188px;
+        height: 4px;
+        position: absolute;
+        top: -5px;
+        left: 6px;
+        background: #72757C;
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 46px;
+        height: 4px;
+        position: absolute;
+        top: -5px;
+        left: 6px;
+        background: #C29974;
+    }
+    &__p {
+        position: relative;
+    }
+    &__p::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: -31px;
+        left: 40px;
+        background: #C29974;
+        border-radius: 60px;
+    }
+    &__p::after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: -23px;
+        left: 48px;
+        background: #FFFFFF;
+        border-radius: 60px;
+        z-index: 1;
+    }
 }
 
 .color {
     width: 85px;
     margin-right: 110px;
-}
-
-.color__list li {
-    margin-bottom: 15px;
+    &__list li {
+        margin-bottom: 15px;
+    }
 }
 
 .checkbox__span {
@@ -149,16 +131,41 @@
 .amount {
     display: flex;
     margin-top: 7px;
-}
-
-.amount__input {
-    display: none;
-}
-
-.amount__span {
-    position: relative;
-    cursor: pointer;
-    z-index: 1;
+    &__input {
+        display: none;
+    }
+    &__span {
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+    }
+    &__span::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 80px;
+        height: 36px;
+        background: #FFFFFF;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &__span::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 80px;
+        height: 36px;
+        background: #F3D0DB;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__span:hover {
+        background: #F3D0DB;
+        opacity: 0.5;
+    }
 }
 
 .amount__label1 .amount__span {
@@ -170,38 +177,8 @@
     padding: 7px 19px;
 }
 
-.amount__span::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 80px;
-    height: 36px;
-    background: #FFFFFF;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.amount__span::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 80px;
-    height: 36px;
-    background: #F3D0DB;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-}
-
 .amount__input:checked + .amount__span::after {
     opacity: 1;
-}
-
-.amount__span:hover {
-    background: #F3D0DB;
-    opacity: 0.5;
 }
 
 .button_search {

@@ -1,27 +1,26 @@
-.toysList li {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.toysList img {
-    width: 380px;
-    height: 385px;
-    margin-bottom: 25px;
-}
-
-.toysList a {
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    margin-top: 0;
-    text-transform: uppercase;
-}
-
-.toysList p {
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
+.toysList {
+    & li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    & img {
+        width: 380px;
+        height: 385px;
+        margin-bottom: 25px;
+    }
+    & a {
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+    & p {
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 
 .toys_opacity {
