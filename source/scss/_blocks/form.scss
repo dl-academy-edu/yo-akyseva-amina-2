@@ -56,7 +56,6 @@ input:disabled,
     margin: 0;
     margin-top: -5px;
     padding: 0;
-    border: none;
     margin-bottom: 19px;
     font-size: 0%;
     border: none;
@@ -77,9 +76,7 @@ input:disabled,
     cursor: pointer;
     padding-left: 35px;
     &::before {
-        content: '';
-        position: absolute;
-        display: block;
+        @extend %content;
         width: 15px;
         height: 15px;
         border: 2px solid #C29974;
@@ -89,9 +86,7 @@ input:disabled,
         left: 0;
     }
     &::after {
-        content: '';
-        position: absolute;
-        display: block;
+        @extend %content;
         width: 15px;
         height: 15px;
         background-image: url('../img/navigation/okey.svg');

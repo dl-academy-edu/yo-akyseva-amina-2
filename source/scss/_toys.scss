@@ -1,5 +1,6 @@
 .search {
     background: #E5EAF8;
+    height: 256px;
     &_section {
         display: flex;
         justify-content: flex-start;
@@ -21,21 +22,17 @@
     margin-top: 30px;
     position: relative;
     &::before {
-        content: '';
-        display: block;
+        @extend %content;
         width: 188px;
         height: 4px;
-        position: absolute;
         top: -5px;
         left: 6px;
         background: #72757C;
     }
     &::after {
-        content: '';
-        display: block;
+        @extend %content;
         width: 46px;
         height: 4px;
-        position: absolute;
         top: -5px;
         left: 6px;
         background: #C29974;
@@ -44,22 +41,18 @@
         position: relative;
     }
     &__p::before {
-        content: '';
-        display: block;
+        @extend %content;
         width: 24px;
         height: 24px;
-        position: absolute;
         top: -31px;
         left: 40px;
         background: #C29974;
         border-radius: 60px;
     }
     &__p::after {
-        content: '';
-        display: block;
+        @extend %content;
         width: 8px;
         height: 8px;
-        position: absolute;
         top: -23px;
         left: 48px;
         background: #FFFFFF;
@@ -69,11 +62,12 @@
 }
 
 .color {
-    width: 85px;
-    margin-right: 110px;
+    width: 100px;
+    margin-right: 95px;
     &__list li {
         margin-bottom: 15px;
     }
+    margin-left: -10px;
 }
 
 .checkbox__span {
@@ -91,9 +85,7 @@
 }
 
 .radio_span::before {
-    content: '';
-    position: absolute;
-    display: block;
+    @extend %content;
     width: 17px;
     height: 17px;
     border: 2px solid #C29974;
@@ -104,9 +96,7 @@
 }
 
 .radio_span::after {
-    content: '';
-    position: absolute;
-    display: block;
+    @extend %content;
     width: 10px;
     height: 10px;
     background: #C29974;
@@ -140,9 +130,7 @@
         z-index: 1;
     }
     &__span::before {
-        content: '';
-        position: absolute;
-        display: block;
+        @extend %content;
         width: 80px;
         height: 36px;
         background: #FFFFFF;
@@ -151,9 +139,7 @@
         z-index: -1;
     }
     &__span::after {
-        content: '';
-        position: absolute;
-        display: block;
+        @extend %content;
         width: 80px;
         height: 36px;
         background: #F3D0DB;
@@ -165,6 +151,9 @@
     &__span:hover {
         background: #F3D0DB;
         opacity: 0.5;
+    }
+    &__block {
+        margin-left: -24px;
     }
 }
 

@@ -14,12 +14,12 @@
     @@include('blocks/header.html')
 
     <main>
-        <section class="navigation">
+        <section class="navigation marginTop">
             <h1 class="title_montserrat container">Toy for kids</h1>
             <div class="navigation_div container">
                 <a href="index.html" class="navigation__pseudo italic">Home</a>
                 <a href="catalog.html" class="navigation__pseudo italic">Catalog</a>
-                <p class=" italic">Toys</p>
+                <p class="italic">Toys</p>
             </div>
 
             <div class="search">
@@ -33,7 +33,7 @@
                     </div>
                     
                     <fieldset class="color">
-                        <legend class="title_search">color</legend>
+                        <legend class="title_search">Color</legend>
                         <ul class="undotted color__list">
                             <li>
                                 <label class="">
@@ -80,7 +80,7 @@
                         </ul>
                     </fieldset>
         
-                    <fieldset>
+                    <fieldset class="amount__block">
                         <legend class="title_search">Amount</legend>
                         <ul class="undotted amount">
                             <li>
@@ -152,10 +152,12 @@
 
         <div class="page">
             <button class="button_page_left"></button>
-            <a href="/toys.html" class="page_opacity page_opacity_checked">1</a>
-            <a href="#" class="page_opacity">2</a>
-            <a href="#" class="page_opacity">3</a>
-            <a href="#" class="page_opacity">4</a>
+            <div>
+                <a href="/toys.html" class="page_opacity page_opacity_checked">1</a>
+                <a href="#" class="page_opacity">2</a>
+                <a href="#" class="page_opacity">3</a>
+                <a href="#" class="page_opacity">4</a>  
+            </div>
             <button class="button_page_right"></button>
         </div>
         </section>

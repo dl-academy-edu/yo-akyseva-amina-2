@@ -36,8 +36,7 @@
     left: 89px;
     top: 87px;
     z-index: 1;
-    font-family: 'Montserrat';
-    font-weight: 700;
+    @extend %montserrat;
     font-size: 26px;
     line-height: 29px;
     text-align: center;

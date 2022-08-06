@@ -1,3 +1,6 @@
+%montserrat {font-family: 'Montserrat'; font-weight: 700}
+%content {content: ''; display: block; position: absolute}
+
 body {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: 400;
@@ -14,8 +17,7 @@ body {
 }
 
 .title{
-    font-family: 'Montserrat';
-    font-weight: 700;
+    @extend %montserrat;
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
@@ -24,8 +26,7 @@ body {
         margin-bottom: 15px;
     }
     &_banner {
-        font-family: 'Montserrat';
-        font-weight: 700;
+        @extend %montserrat;
         font-size: 40px;
         line-height: 110%;
         color: #1E0606;
@@ -38,12 +39,12 @@ body {
         margin-bottom: 0px;
     }
     &_montserrat {
-        font-family: 'Montserrat';
-        font-weight: 700;
+        @extend %montserrat;
         font-size: 40px;
         line-height: 49px;
         margin-bottom: 0px;
         padding-top: 15px;
+        text-transform: uppercase;
     }
     &_hidden {
         width: 0;
@@ -54,14 +55,21 @@ body {
         line-height: 0;
     }
     &_blog {
-        font-family: 'Montserrat';
-        font-weight: 700;
+        @extend %montserrat;
         font-size: 40px;
         line-height: 49px;
         text-transform: uppercase;
         margin-bottom: 0px;
         padding-top: 15px;
     }
+}
+
+.marginTop {
+    margin-top: 30px;
+}
+
+fieldset{
+    border: none;
 }
 
 .container {
@@ -94,16 +102,18 @@ a {
     &:disabled {
         background: #C7C1C1;
     }
-    &_page_right {
-        background-image: url('../img/button/pbynr.svg');
-        margin-right: 0;
-        margin-left: auto;
-    }
-    &_page_left {
-        background-image: url('../img/button/pbtnl.svg');
-        margin-right: auto;
-        margin-left: 0;
-    }
+}
+
+.button_page_right {
+    background-image: url('../img/button/pbynr.svg');
+    margin: auto;
+    margin-right: 0;
+}
+
+.button_page_left {
+    background-image: url('../img/button/pbtnl.svg');
+    margin: auto;
+    margin-left: 0;
 }
 
 .button:hover,
@@ -131,51 +141,13 @@ a {
         position: relative;
     }
     &__pseudo::after {
-        content: '';
-        display: block;
-        position: absolute;
+        @extend %content;
         background-image: url('../img/navigation/arrow.svg');
         right: -27px;
         top: 7px;
         width: 8px;
         height: 12px;
     }
-}
-
-/* Page */
-
-.page {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 54px;
-    &_opacity_checked {
-        color: #C29974;
-    }
-    & a {
-        margin-right: 32px;
-        margin-left: 33px;
-    }
-}
-
-.page_opacity:hover,
-.page_opacity:focus {
-    opacity: 0.5;
-}
-
-.button_page_left , .button_page_right {
-    display: block;
-    border: none;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: transparent;
-    width: 16px;
-    height: 30px;
-    cursor: pointer;
 }
 
 /* Критерии */
@@ -212,4 +184,46 @@ a {
 
 .popup {
     z-index: 5;
+}
+
+/* Page */
+
+.page_opacity_checked {
+    color: #C29974;
+}
+
+.page a {
+    @extend %montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-right: 32px;
+    margin-left: 33px;
+}
+
+.page_opacity:hover,
+.page_opacity:focus {
+    opacity: 0.5;
+}
+
+.button_page_left , .button_page_right {
+    display: block;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    width: 16px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.page {
+    @extend %montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
 }

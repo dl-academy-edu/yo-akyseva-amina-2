@@ -109,9 +109,7 @@
 }
 
 .footer__additionaly1:hover::after {
-  content: '';
-  display: block;
-  position: absolute;
+  @extend %content;
   background-image: url('../img/group2.png');
   width: 97px;
   height: 16px;
