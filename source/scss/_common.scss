@@ -96,11 +96,16 @@ a {
     border: none;
     cursor: pointer;
     padding: 9px 22px;
+    transition: 0.4s;
     &:active {
         background: #CFAF91;
     }
     &:disabled {
         background: #C7C1C1;
+    }
+    &_search {
+        margin-left: 58px;
+        margin-top: 37px;
     }
 }
 
@@ -125,6 +130,7 @@ a {
 
 .navigation {
     margin-bottom: 60px;
+    transition: 0.4s;
     &_div {
         margin-top: -6px;
         display: flex;
@@ -184,12 +190,14 @@ a {
 
 .popup {
     z-index: 5;
+    transition: 0.4s;
 }
 
 /* Page */
 
 .page_opacity_checked {
     color: #C29974;
+    transition: 0.4s;
 }
 
 .page a {
@@ -204,6 +212,7 @@ a {
 .page_opacity:hover,
 .page_opacity:focus {
     opacity: 0.5;
+    transition: 0.4s;
 }
 
 .button_page_left , .button_page_right {
@@ -215,6 +224,7 @@ a {
     width: 16px;
     height: 30px;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .page {
@@ -226,4 +236,5 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
+    transition: 0.4s;
 }

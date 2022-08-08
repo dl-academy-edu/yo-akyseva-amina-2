@@ -1,0 +1,56 @@
+.animation {
+    position: relative;
+}
+
+
+
+.animation__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 30px;
+}
+
+.animation__img {
+    width: 1341px;
+    height: 134px;
+    margin-left: 140px;
+    margin-bottom: 0;
+}
+
+.animation__city {
+    margin-top: 0;
+    background: url('../img/animation/city.png');
+    width: 100%;
+    height: 630px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.animation__lanterns::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1025px;
+    height: 394px;
+    background: url('../img/animation/lanterns.png');
+    top: 170px;
+    left: 490px;
+}
+
+.animation__lanterns::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/animation/lantern.png');
+    width: 214px;
+    height: 552px;
+    top: 165px;
+    left: 1090px;
+}
+
+.animation__pair {
+    margin-top: 230px;
+    padding-top: 0;
+    margin-left: 230px;
+}

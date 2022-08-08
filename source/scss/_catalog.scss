@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0px;
+    transition: 0.4s;
     & a {
         display: block;
         font-family: 'Montserrat';
@@ -69,6 +70,7 @@
 .catalog {
     margin-left: 200px;
     margin-bottom: 52px;
+    transition: 0.4s;
     & h2 {
         margin-bottom: 25px;
     }

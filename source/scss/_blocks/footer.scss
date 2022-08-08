@@ -1,4 +1,5 @@
 .footer {
+  transition: 0.4s;
   background: #434343;
   &__list {
     display: flex;
@@ -69,6 +70,7 @@
 }
 
 .Email__input {
+  transition: 0.4s;
   background: #666666;
   padding: 10px 13px;
   margin-right: 0;
@@ -101,6 +103,7 @@
 .footer__list2 .footer__div a:hover,
 .footer__list2 .footer__div a:active {
   text-decoration: underline solid #FFFFFF;
+  transition: 0.4s;
   color: #FFFFFF;
 }
 
@@ -119,4 +122,5 @@
 
 .footer__additionaly1:hover p {
   color: #C29974;
+  transition: 0.4s;
 }

@@ -4,6 +4,7 @@
     margin: 50px auto;
     padding-top: 45px;
     padding-bottom: 10px;
+    transition: 0.4s;
     &_opasity:active {
         opacity: 0.2;
     }
@@ -31,4 +32,5 @@
 .header_opasity:hover,
 .header_opasity:focus {
     opacity: 0.5;
+    transition: 0.4s;
 }
