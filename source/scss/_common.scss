@@ -109,16 +109,42 @@ a {
     }
 }
 
-.button_page_right {
-    background-image: url('../img/button/pbynr.svg');
+.line_page_right {
+    width: 100%;
+    height: 100%;
+    opacity: 12%;
     margin: auto;
     margin-right: 0;
+    stroke: #1E0606;
 }
 
-.button_page_left {
-    background-image: url('../img/button/pbtnl.svg');
+.line_page_left {
+    width: 100%;
+    height: 100%;
+    opacity: 12%;
     margin: auto;
     margin-left: 0;
+    stroke: #1E0606;
+}
+
+.line_page_right:hover {
+    opacity: 100%;
+    stroke: #C29974;
+}
+
+.line_page_left:hover {
+    opacity: 100%;
+    stroke: #C29974;
+}
+
+.line_page_right:active {
+    opacity: 70%;
+    stroke: #C29974;
+}
+
+.line_page_left:active {
+    opacity: 70%;
+    stroke: #C29974;
 }
 
 .button:hover,
@@ -162,25 +188,6 @@ a {
     background: #E1F0F7;
 }
 
-.button_page_right:hover,
-.button_page_right:focus {
-    background-image: url('../img/button/arrowrighthover.svg');
-    margin-right: 0;
-    margin-left: auto;
-}
-
-.button_page_left:hover,
-.button_page_left:focus{
-    background-image: url('../img/button/arrowlefthover.svg');
-    margin-right: auto;
-    margin-left: 0;
-}
-
-.button_page_right:hover:active,
-.button_page_left:hover:active {
-    opacity: 0.6;
-}
-
 .listcategory__a:active,
 .listcategory__a:hover,
 .listcategory__a:focus {
@@ -215,7 +222,7 @@ a {
     transition: 0.4s;
 }
 
-.button_page_left , .button_page_right {
+.line_page_left , .line_page_right {
     display: block;
     border: none;
     background-repeat: no-repeat;

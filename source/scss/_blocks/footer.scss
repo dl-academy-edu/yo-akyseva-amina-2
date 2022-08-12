@@ -65,6 +65,11 @@
   flex-wrap: wrap;
 }
 
+.p_1:hover {
+  fill: #C29974;
+}
+
+
 .email__span {
   font-size: 0;
 }
@@ -109,15 +114,6 @@
 
 .footer__additionaly1 p {
   margin-right: 25px;
-}
-
-.footer__additionaly1:hover::after {
-  @extend %content;
-  background-image: url('../img/group2.png');
-  width: 97px;
-  height: 16px;
-  top: 19px;
-  left: 146px;
 }
 
 .footer__additionaly1:hover p {
