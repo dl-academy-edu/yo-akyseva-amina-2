@@ -72,11 +72,6 @@ fieldset{
     border: none;
 }
 
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
 a {
     text-decoration: none;
     color: #1E0606;
@@ -198,6 +193,53 @@ a {
 .popup {
     z-index: 5;
     transition: 0.4s;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(125, 151, 218, 0.8);
+    display: none;
+    transition: 0.4s;
+}
+
+.popupOpen {
+    display: flex;
+    transition: 0.4s;
+}
+
+.formPopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popupClose {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 25%;
+    top: 14%;
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.5;
+    }
+    &:active {
+        opacity: 0.2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .popupClose {
+        right: 21%;
+        top: 19%;
+    }
 }
 
 /* Page */

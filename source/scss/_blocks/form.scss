@@ -118,3 +118,41 @@ input:disabled,
     margin-top: 0px;
     resize: none;
 }
+
+@media screen and (max-width: 768px) {
+
+    .form {
+        width: 680px;
+        padding: 42px 56px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .form {
+        padding: 25px 25px;
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_label {
+        width: 100%;
+    }
+
+    .phone .form_label {
+        width: 100%;
+    }
+
+    .phone {
+        &__div {
+            margin-right: 0px;
+        }
+    }
+
+    input {
+        padding: 12px 15px;
+    }
+}
