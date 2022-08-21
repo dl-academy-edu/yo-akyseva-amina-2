@@ -225,16 +225,26 @@
   .footer__list {
     flex-direction: column;
     margin-right: 0;
+    margin-left: 10%;
     width: 100%;
+    margin-bottom: 20%;
   }
 
   .footer__text {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-right: 0;
   }
 
   .footer__text li {
     margin-right: 20%;
+  }
+
+  .footer__div {
+    margin-bottom: 0%;
+    padding-bottom: 0;
+    width: 100%;
+    
   }
 }
