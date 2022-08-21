@@ -287,3 +287,44 @@ a {
     margin-bottom: 60px;
     transition: 0.4s;
 }
+
+@media screen and (max-width: 768px) {
+    
+    .title_montserrat {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .italic {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .navigation { 
+        &__pseudo::after {
+        background-size: 100%;
+        width: 8px;
+        height: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .title_montserrat {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .italic {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .navigation { 
+        &__pseudo::after {
+        background-size: 100%;
+        width: 6px;
+        height: 9px;
+        }
+    }
+}

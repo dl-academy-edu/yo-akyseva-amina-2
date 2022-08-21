@@ -78,3 +78,187 @@
         width: 67%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .serviceList2 {
+        & a {
+            display: block;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        & li:nth-child(1) {
+            background: #DBE4DB;
+            padding: 11% 1%;
+            background-image: url('../img/sweater.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 30%;
+        }
+        & li:nth-child(2) {
+            background: #EADDD3;
+            padding: 11% 1%;
+            background-image: url('../img/sock.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 30%;
+        }
+        & li:nth-child(3) {
+            background: #F8F2DA;
+            padding: 11% 12%;
+            background-image: url('../img/animal.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-right: 0;
+            margin-right: 0;
+            width: 35%;
+        }
+        & li:nth-child(4) {
+            background: #D5D4E1;
+            padding: 11% 2%;
+            background-image: url('../img/pursone.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 0;
+            background-size: 100%;
+            width: 30%;
+        }
+        & li:nth-child(5) {
+            background: #F3D0DB;
+            padding: 11% 10%;
+            background-image: url('../img/flamingo.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 30%;
+        }
+        & li:nth-child(6) {
+            background: #E5EAF8;
+            padding: 10% 1%;
+            margin: 0;
+            background-image: url('../img/girlsweater.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 35%;
+            height: 90%;
+        }
+        & li {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .catalog {
+        margin-left: 0;
+        margin-bottom: 52px;
+        transition: 0.4s;
+        & h2 {
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 25px;
+        }
+        & p {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+
+    .serviceList2 {
+        & a {
+            display: block;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        & li:nth-child(1) {
+            background: #DBE4DB;
+            padding: 20% 10%;
+            background-image: url('../img/sweater.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 50%;
+        }
+        & li:nth-child(2) {
+            background: #EADDD3;
+            padding: 20% 10%;
+            background-image: url('../img/sock.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 45%;
+        }
+        & li:nth-child(3) {
+            background: #F8F2DA;
+            padding: 20% 10%;
+            background-image: url('../img/animal.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-right: 5;
+            width: 50%;
+        }
+        & li:nth-child(4) {
+            background: #D5D4E1;
+            padding: 20% 10%;
+            background-image: url('../img/pursone.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 5px;
+            background-size: 100%;
+            width: 45%;
+        }
+        & li:nth-child(5) {
+            background: #F3D0DB;
+            padding: 20% 10%;
+            background-image: url('../img/flamingo.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 50%;
+        }
+        & li:nth-child(6) {
+            background: #E5EAF8;
+            padding: 18% 10%;
+            margin: 0;
+            background-image: url('../img/girlsweater.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 45%;
+            height: 50%;
+        }
+        & li {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .catalog {
+        margin-left: 0;
+        margin-bottom: 52px;
+        transition: 0.4s;
+        & h2 {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 25px;
+        }
+        & p {
+            width: 100%;
+        }
+    }
+}
