@@ -13,53 +13,152 @@
         text-align: center;
         color: #FFFFFF;
     }
-    & li:nth-child(1) {
+}
+
+$numberColumns: 12;
+$gap: 20px;
+
+$size-xl: 1220px;
+$size-lg: 1000px;
+$size-md: 768px;
+$size-sm: 576px;
+
+@mixin media-interval($min, $max) {
+  @if $max == 0 {
+    $max: 9999px;
+  }
+  
+  @media (min-width: ($min + 1px)) and (max-width: $max) {
+    @content;
+  }
+}
+@mixin create-grid($type-width, $media-size) {
+  @if media-size == "full" {
+    .container {
+      max-width: 100%;
+    }
+  } @else {
+    .container {
+      max-width: $media-size - $gap*2;
+    }
+  }
+  @for $i from 1 through $numberColumns {
+    .col-#{$type-width}-#{$i} {
+      width: (100% / $numberColumns) * $i;
+    }
+  
+    .skip-#{$type-width}-#{$i} {
+      margin-left: (100% / $numberColumns) * $i;
+    }
+    .add-#{$type-width}-#{$i} {
+      margin-right: (100% / $numberColumns) * $i;
+    }
+  }
+}
+
+@include media-interval($size-xl, 0) {
+  @include create-grid(xl, $size-xl);
+}
+@include media-interval($size-lg, $size-xl) {
+  @include create-grid(lg, $size-lg);
+}
+@include media-interval($size-md, $size-lg) {
+  @include create-grid(md, $size-md);
+}
+@include media-interval($size-sm, $size-md) {
+  @include create-grid(sm, $size-sm);
+}
+@include media-interval(0, $size-sm) {
+  @include create-grid(xs, "full");
+}
+
+.container {
+  padding-left: $gap;
+  padding-right: $gap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: $gap;
+  padding-right: $gap;
+}
+
+.row {
+  display: flex;
+  margin: (-$gap) (-$gap/2) 0 (-$gap/2);
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+div[class*="col"] {
+  box-sizing: border-box;
+  padding: $gap $gap/2 0 $gap/2;
+}
+
+
+.row {
+  .content {
+    padding: 15px;
+    box-sizing: border-box;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.content {
+    &_1 {
         background: #DBE4DB;
-        padding: 100px 40px;
         background-image: url('../img/sweater.png');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 244px 177px;
+        background-size: 100%;
     }
-    & li:nth-child(2) {
+    &_2 {
         background: #EADDD3;
-        padding: 100px 35px;
         background-image: url('../img/sock.png');
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 80%;
     }
-    & li:nth-child(3) {
+    &_3 {
         background: #F8F2DA;
-        padding: 120px 100px;
         background-image: url('../img/animal.png');
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 100%;
     }
-    & li:nth-child(4) {
+    &_4 {
         background: #D5D4E1;
-        padding: 120px 44px;
         background-image: url('../img/pursone.png');
         background-position: center;
         background-repeat: no-repeat;
-        margin-left: 200px;
+        background-size: 90%;
     }
-    & li:nth-child(5) {
+    &_5 {
         background: #F3D0DB;
-        padding: 120px 105px;
         background-image: url('../img/flamingo.png');
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 100%;
     }
-    & li:nth-child(6) {
+    &_6 {
         background: #E5EAF8;
-        padding: 103px 20px;
         background-image: url('../img/girlsweater.png');
         background-position: center;
         background-repeat: no-repeat;
-    }
-    & li {
-        margin-right: 20px;
-        margin-bottom: 23px;
+        background-size: 100%;
     }
 }
 
@@ -79,7 +178,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .serviceList2 {
         & a {
             display: block;
@@ -91,69 +190,6 @@
             text-align: center;
             color: #FFFFFF;
         }
-        & li:nth-child(1) {
-            background: #DBE4DB;
-            padding: 11% 1%;
-            background-image: url('../img/sweater.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 30%;
-        }
-        & li:nth-child(2) {
-            background: #EADDD3;
-            padding: 11% 1%;
-            background-image: url('../img/sock.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 30%;
-        }
-        & li:nth-child(3) {
-            background: #F8F2DA;
-            padding: 11% 12%;
-            background-image: url('../img/animal.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            margin-right: 0;
-            margin-right: 0;
-            width: 35%;
-        }
-        & li:nth-child(4) {
-            background: #D5D4E1;
-            padding: 11% 2%;
-            background-image: url('../img/pursone.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-left: 0;
-            background-size: 100%;
-            width: 30%;
-        }
-        & li:nth-child(5) {
-            background: #F3D0DB;
-            padding: 11% 10%;
-            background-image: url('../img/flamingo.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 30%;
-        }
-        & li:nth-child(6) {
-            background: #E5EAF8;
-            padding: 10% 1%;
-            margin: 0;
-            background-image: url('../img/girlsweater.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 35%;
-            height: 90%;
-        }
-        & li {
-            margin-right: 5px;
-            margin-bottom: 5px;
-        }
     }
 
     .catalog {
@@ -161,11 +197,13 @@
         margin-bottom: 52px;
         transition: 0.4s;
         & h2 {
+            left: 0;
             font-size: 36px;
             line-height: 44px;
             margin-bottom: 25px;
         }
         & p {
+            left: 0;
             width: 100%;
         }
     }
@@ -183,68 +221,6 @@
             text-transform: uppercase;
             text-align: center;
             color: #FFFFFF;
-        }
-        & li:nth-child(1) {
-            background: #DBE4DB;
-            padding: 20% 10%;
-            background-image: url('../img/sweater.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 50%;
-        }
-        & li:nth-child(2) {
-            background: #EADDD3;
-            padding: 20% 10%;
-            background-image: url('../img/sock.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 45%;
-        }
-        & li:nth-child(3) {
-            background: #F8F2DA;
-            padding: 20% 10%;
-            background-image: url('../img/animal.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            margin-right: 5;
-            width: 50%;
-        }
-        & li:nth-child(4) {
-            background: #D5D4E1;
-            padding: 20% 10%;
-            background-image: url('../img/pursone.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-left: 5px;
-            background-size: 100%;
-            width: 45%;
-        }
-        & li:nth-child(5) {
-            background: #F3D0DB;
-            padding: 20% 10%;
-            background-image: url('../img/flamingo.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 50%;
-        }
-        & li:nth-child(6) {
-            background: #E5EAF8;
-            padding: 18% 10%;
-            margin: 0;
-            background-image: url('../img/girlsweater.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 45%;
-            height: 50%;
-        }
-        & li {
-            margin-right: 5px;
-            margin-bottom: 5px;
         }
     }
 
