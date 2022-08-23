@@ -65,10 +65,12 @@
         width: 3%;
         height: 3%;
         margin-top: 2%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        display: block;
+        position: fixed;
         margin: auto;
+        left: 40%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     &__menu {
@@ -113,6 +115,11 @@
         margin-left: 40.5%;
         margin-right: 5%;
     }
+
+    .mobile-header a:nth-child(1) {
+        margin-right: 0;
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -136,6 +143,11 @@
 
     .header__menu, .header__contact {
         display: none;
+    }
+
+    .mobile-header a:nth-child(1) {
+        margin-right: 0;
+        padding-right: 0;
     }
 
 }
@@ -167,6 +179,11 @@
         padding-top: 4%;
         height: 50%;
         width: 100%;
+    }
+
+    .mobile-header a:nth-child(1) {
+        margin-right: 0;
+        padding-right: 0;
     }
 
 }

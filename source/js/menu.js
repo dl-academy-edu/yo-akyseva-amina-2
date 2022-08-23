@@ -6,6 +6,6 @@ mobileBurger.addEventListener('click', function(){
     mobileHeader.classList.add('mobile-header__open');
 })
 
-popupClose.addEventListener('click', function(){
+mobileClose.addEventListener('click', function(){
     mobileHeader.classList.remove('mobile-header__open');
 })
