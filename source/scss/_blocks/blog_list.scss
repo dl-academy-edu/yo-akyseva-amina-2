@@ -1,17 +1,18 @@
 .blogList li {
     display: flex;
     flex-direction: column;
-    width: 32.5%;
+    width: 300px;
     margin-bottom: 16px;
 }
 
 .blogList img {
-    width: 100%;
-    height: 100%;
+    width: 380px;
+    height: 220px;
     margin-bottom: 0;
 }
 
 .blogList a {
+    width: 100%;
     @extend %montserrat;
     font-size: 24px;
     line-height: 31px;
@@ -19,11 +20,13 @@
 }
 
 .blog__p {
+    width: 100%;
     font-size: 18px;
     line-height: 25px;
 }
 
 .blog__data {
+    width: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -34,4 +37,50 @@
 .blog__opacity:hover,
 .blog__opacity:active {
     text-decoration: underline solid #1E0606;;
+}
+
+@media screen and (max-width: 768px) {
+    .blogList li {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 16px;
+    }
+
+    .blogList img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 567px) {
+    .blogList li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .blogList img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .blogList a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .blog__p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .blog__data {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }

@@ -1,7 +1,7 @@
 .blogList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: stretch;
     margin-bottom: 15px;
     transition: 0.4s;
 }
