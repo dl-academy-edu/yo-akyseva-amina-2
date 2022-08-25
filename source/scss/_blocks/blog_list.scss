@@ -1,13 +1,14 @@
 .blogList li {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 360px;
     margin-bottom: 16px;
+    margin-right: 1%;
 }
 
 .blogList img {
-    width: 380px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -43,8 +44,9 @@
     .blogList li {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 48%;
         margin-bottom: 16px;
+        
     }
 
     .blogList img {
