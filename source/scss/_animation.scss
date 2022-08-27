@@ -1,6 +1,7 @@
 .animation {
     position: relative;
     margin-bottom: 65px;
+    overflow: hidden;
 }
 
 .animation__title {
@@ -11,9 +12,9 @@
 }
 
 .animation__img {
-    width: 1341px;
-    height: 134px;
-    margin-left: 140px;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
     margin-bottom: 0;
 }
 
@@ -24,17 +25,20 @@
     height: 630px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .animation__lanterns::after {
     content: '';
     display: block;
     position: absolute;
-    width: 1025px;
-    height: 394px;
+    width: 70%;
+    height: 55%;
     background: url('../img/animation/lanterns.png');
-    top: 170px;
-    left: 490px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 185px;
+    left: 430px;
     z-index: 1;
 }
 
@@ -43,16 +47,18 @@
     display: block;
     position: absolute;
     background: url('../img/animation/lantern.png');
-    width: 214px;
-    height: 552px;
-    top: 165px;
-    left: 1090px;
+    width: 15%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 20%;
+    left: 72%;
     z-index: 3;
 }
 
 @keyframes cars {
     0% {
-        left: -20%;
+        left: -100%;
     }
     100% {
         left: 100%;
@@ -61,42 +67,45 @@
 
 .cars {
     position: relative;
+    top: 45%;
     z-index: 0;
 }
 
 .cars img {
     position: absolute;
-    left: -20%;
+    left: -100%;
+    width: 15%;
+
 }
 
 .cars img:nth-child(1) {
-    top: 300px;
     animation: linear cars 10s infinite;
 }
 
 .cars img:nth-child(2) {
-    top: 290px;
     animation: linear cars 10s infinite;
     animation-delay: 2s;
 }
 
 .cars img:nth-child(3) {
-    top: 330px;
+    margin-top: 3%;
     animation: linear cars 10s infinite;
     animation-delay: 4s;
 }
 
 .cars img:nth-child(4) {
-    top: 270px;
     animation: linear cars 10s infinite;
     animation-delay: 7s;
 }
 
 .animation__pair {
     position: absolute;
-    margin-top: 230px;
+    width: 25%;
+    height: 40%;
+    background-repeat: no-repeat;
+    margin-top: 18%;
     padding-top: 0;
-    margin-left: 230px;
+    margin-left: 16%;
     z-index: 4;
 }
 
@@ -120,8 +129,11 @@
 
 .animation__taxi {
     position: absolute;
-    top: 400px;
-    right: -70%;
+    width: 55%;
+    height: 30%;
+    background-repeat: no-repeat;
+    top: 55%;
+    right: -200%;
     animation: taxi 6s;
     animation-delay: 3s;
     z-index: 2;
@@ -139,8 +151,10 @@
 
 .animation__heand {
     position: absolute;
-    top: 300px;
-    left: 24%;
+    top: 45%;
+    left: 26%;
+    width: 7%;
+    height: 15%;
     transform: rotate(160deg);
     transform-origin: left bottom;
     animation: linear heand 2s;
@@ -162,10 +176,10 @@
 
 @keyframes taxi {
     0% {
-        right: -70%;
+        right: -200%;
     }
     50%, 70% {
-        right: 5%;
+        right: 0%;
     }
     100% {
         right: 150%;
@@ -174,8 +188,8 @@
 
 @keyframes heand {
     0% {
-        top: 300px;
-        left: 24%;
+        top: 45%;
+        left: 26%;
         transform: rotate(160deg);
         transform-origin: left bottom;
     }
@@ -184,9 +198,176 @@
         transform-origin: left bottom;
     }
     100% {
-        top: 300px;
-        left: 24%;
+        top: 45%;
+        left: 26%;
         transform: rotate(160deg);
         transform-origin: left bottom;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .animation {
+        width: 100%;
+        margin-bottom: -10%;
+    }
+
+    .animation__city {
+        margin-top: -15%;
+    }
+
+    .animation__lanterns::after {
+        top: 24%;
+        left: 30%;
+    }
+
+    .animation__lanterns::before {
+        top: 21%;
+        left: 72%;
+    }
+
+    .animation__pair {
+        width: 20%;
+        height: 30%;
+        top: 17%;
+    }
+
+    .animation__heand {
+        top: 33%;
+        left: 24%;
+        width: 5%;
+        height: 11%;
+    }
+
+    .cars {
+        top: 48%;
+    }
+
+    .animation__taxi {
+        width: 50%;
+        height: 20%;
+        top: 43%;
+    }
+
+    @keyframes heand {
+        0% {
+            top: 33%;
+            left: 24%;
+            transform: rotate(160deg);
+            transform-origin: left bottom;
+        }
+        40%, 55% {
+            transform: rotate(30deg);
+            transform-origin: left bottom;
+        }
+        100% {
+            top: 33%;
+            left: 24%;
+            transform: rotate(160deg);
+            transform-origin: left bottom;
+        }
+    }
+
+    .animation__msg_girl {
+        top: 37%;
+        left: 10%;
+        opacity: 0;
+        width: 10%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .animation__msg_boy {
+        top: 31%;
+        left: 22%;
+        opacity: 0;
+        width: 10%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .animation__msg_taxi {
+        right: 28%;
+        top: 40%;
+        opacity: 0;
+        width: 10%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .animation__pair {
+        width: 20%;
+        height: 20%;
+        top: 28%;
+    }
+
+    .animation__heand {
+        top: 39%;
+        left: 24%;
+        width: 5%;
+        height: 8%;
+    }
+
+    .animation__taxi {
+        width: 48%;
+        height: 15%;
+        top: 44%;
+    }
+
+    @keyframes heand {
+        0% {
+            top: 39%;
+            left: 24%;
+            transform: rotate(160deg);
+            transform-origin: left bottom;
+        }
+        40%, 55% {
+            transform: rotate(30deg);
+            transform-origin: left bottom;
+        }
+        100% {
+            top: 39%;
+            left: 24%;
+            transform: rotate(160deg);
+            transform-origin: left bottom;
+        }
+    }
+
+    .animation__lanterns::after {
+        top: 31%;
+        left: 30%;
+    }
+
+    .animation__lanterns::before {
+        top: 29%;
+        left: 72%;
+    }
+
+    .animation__msg_girl {
+        top: 42%;
+        left: 10%;
+        opacity: 0;
+        width: 10%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .animation__msg_boy {
+        top: 38%;
+        left: 22%;
+        opacity: 0;
+        width: 10%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .animation__msg_taxi {
+        right: 28%;
+        top: 41%;
+        opacity: 0;
+        width: 10%;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 }

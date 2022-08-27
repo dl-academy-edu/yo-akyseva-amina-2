@@ -231,7 +231,7 @@ a {
     background: transparent;
     position: absolute;
     right: 25%;
-    top: 14%;
+    top: 15%;
     transition: 0.4s;
     cursor: pointer;
     &:hover {
@@ -240,13 +240,13 @@ a {
     &:active {
         opacity: 0.2;
     }
-}
-
-@media screen and (max-width: 768px) {
-
-    .popupClose {
-        right: 21%;
-        top: 19%;
+    @media screen and (max-width: 768px) {
+        right: 6%;
+        top: 8%;
+    }
+    @media screen and (max-width: 567px) {
+        right: 10%;
+        top: 8%;
     }
 }
 
