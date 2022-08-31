@@ -151,7 +151,7 @@
 
 .animation__heand {
     position: absolute;
-    top: 45%;
+    top: 45.5%;
     left: 26%;
     width: 7%;
     height: 15%;
@@ -188,7 +188,7 @@
 
 @keyframes heand {
     0% {
-        top: 45%;
+        top: 45.5%;
         left: 26%;
         transform: rotate(160deg);
         transform-origin: left bottom;
@@ -198,14 +198,14 @@
         transform-origin: left bottom;
     }
     100% {
-        top: 45%;
+        top: 45.5%;
         left: 26%;
         transform: rotate(160deg);
         transform-origin: left bottom;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .animation {
         width: 100%;
         margin-bottom: -10%;
@@ -216,12 +216,12 @@
     }
 
     .animation__lanterns::after {
-        top: 24%;
+        top: 14%;
         left: 30%;
     }
 
     .animation__lanterns::before {
-        top: 21%;
+        top: 10%;
         left: 72%;
     }
 
@@ -232,7 +232,7 @@
     }
 
     .animation__heand {
-        top: 33%;
+        top: 42%;
         left: 24%;
         width: 5%;
         height: 11%;
@@ -250,7 +250,7 @@
 
     @keyframes heand {
         0% {
-            top: 33%;
+            top: 42%;
             left: 24%;
             transform: rotate(160deg);
             transform-origin: left bottom;
@@ -260,7 +260,7 @@
             transform-origin: left bottom;
         }
         100% {
-            top: 33%;
+            top: 42%;
             left: 24%;
             transform: rotate(160deg);
             transform-origin: left bottom;
@@ -292,6 +292,45 @@
         width: 10%;
         background-repeat: no-repeat;
         background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .animation__lanterns::after {
+        top: 24%;
+        left: 30%;
+    }
+
+    .animation__lanterns::before {
+        top: 20%;
+        left: 72%;
+    }
+
+    .animation__heand {
+        top: 35%;
+        left: 24%;
+        width: 5%;
+        height: 11%;
+    }
+
+    @keyframes heand {
+        0% {
+            top: 35%;
+            left: 24%;
+            transform: rotate(160deg);
+            transform-origin: left bottom;
+        }
+        40%, 55% {
+            transform: rotate(30deg);
+            transform-origin: left bottom;
+        }
+        100% {
+            top: 35%;
+            left: 24%;
+            transform: rotate(160deg);
+            transform-origin: left bottom;
+        }
     }
 }
 

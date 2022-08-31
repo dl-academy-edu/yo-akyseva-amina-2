@@ -40,7 +40,7 @@
     text-decoration: underline solid #1E0606;;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .blogList li {
         display: flex;
         flex-direction: column;
@@ -57,7 +57,7 @@
 
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 770px) {
     .blogList li {
         display: flex;
         flex-direction: column;
