@@ -1,97 +1,240 @@
-.titlecategory {
-    font-size: 40px;
-    line-height: 49px;
-    margin-bottom: 0px;
-    padding-top: 15px;
-}
-
 .serviceList2 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0px;
+    transition: 0.4s;
+    & a {
+        display: block;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFFFF;
+    }
 }
 
-.serviceList2 a {
-    display: block;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 32px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFFFFF;
+$numberColumns: 12;
+$gap: 20px;
+
+$size-xl: 1220px;
+$size-lg: 1000px;
+$size-md: 768px;
+$size-sm: 576px;
+
+@mixin media-interval($min, $max) {
+  @if $max == 0 {
+    $max: 9999px;
+  }
+  
+  @media (min-width: ($min + 1px)) and (max-width: $max) {
+    @content;
+  }
+}
+@mixin create-grid($type-width, $media-size) {
+  @if media-size == "full" {
+    .container {
+      max-width: 100%;
+    }
+  } @else {
+    .container {
+      max-width: $media-size - $gap*2;
+    }
+  }
+  @for $i from 1 through $numberColumns {
+    .col-#{$type-width}-#{$i} {
+      width: (100% / $numberColumns) * $i;
+    }
+  
+    .skip-#{$type-width}-#{$i} {
+      margin-left: (100% / $numberColumns) * $i;
+    }
+    .add-#{$type-width}-#{$i} {
+      margin-right: (100% / $numberColumns) * $i;
+    }
+  }
 }
 
-.serviceList2 li:nth-child(1) {
-    background: #DBE4DB;
-    padding: 100px 40px;
-    background-image: url('../img/sweater.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 244px 177px;
+@include media-interval($size-xl, 0) {
+  @include create-grid(xl, $size-xl);
+}
+@include media-interval($size-lg, $size-xl) {
+  @include create-grid(lg, $size-lg);
+}
+@include media-interval($size-md, $size-lg) {
+  @include create-grid(md, $size-md);
+}
+@include media-interval($size-sm, $size-md) {
+  @include create-grid(sm, $size-sm);
+}
+@include media-interval(0, $size-sm) {
+  @include create-grid(xs, "full");
 }
 
-.serviceList2 li:nth-child(2) {
-    background: #EADDD3;
-    padding: 100px 35px;
-    background-image: url('../img/sock.png');
-    background-position: center;
-    background-repeat: no-repeat;
+.container {
+  padding-left: $gap;
+  padding-right: $gap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: $gap;
+  padding-right: $gap;
+}
+
+.row {
+  display: flex;
+  margin: (-$gap) (-$gap/2) 0 (-$gap/2);
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+div[class*="col"] {
+  box-sizing: border-box;
+  padding: $gap $gap/2 0 $gap/2;
 }
 
 
-.serviceList2 li:nth-child(3) {
-    background: #F8F2DA;
-    padding: 120px 100px;
-    background-image: url('../img/animal.png');
-    background-position: center;
-    background-repeat: no-repeat;
+.row {
+  .content {
+    padding: 15px;
+    box-sizing: border-box;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-
-.serviceList2 li:nth-child(4) {
-    background: #D5D4E1;
-    padding: 120px 44px;
-    background-image: url('../img/pursone.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 200px;
-}
-
-.serviceList2 li:nth-child(5) {
-    background: #F3D0DB;
-    padding: 120px 105px;
-    background-image: url('../img/flamingo.png');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.serviceList2 li:nth-child(6) {
-    background: #E5EAF8;
-    padding: 103px 20px;
-    background-image: url('../img/girlsweater.png');
-    background-position: center;
-    background-repeat: no-repeat;
+.content {
+    &_1 {
+        background: #DBE4DB;
+        background-image: url('../img/sweater.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &_2 {
+        background: #EADDD3;
+        background-image: url('../img/sock.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+    &_3 {
+        background: #F8F2DA;
+        background-image: url('../img/animal.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &_4 {
+        background: #D5D4E1;
+        background-image: url('../img/pursone.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+    &_5 {
+        background: #F3D0DB;
+        background-image: url('../img/flamingo.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &_6 {
+        background: #E5EAF8;
+        background-image: url('../img/girlsweater.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 }
 
 .serviseW {
     width: 95%;
 }
 
-.serviceList2 li {
-    margin-right: 20px;
-    margin-bottom: 23px;
-}
-
-.textCatalogSection {
+.catalog {
     margin-left: 200px;
     margin-bottom: 52px;
+    transition: 0.4s;
+    & h2 {
+        margin-bottom: 25px;
+    }
+    & p {
+        width: 67%;
+    }
 }
 
-.textCatalogSection h2 {
-    margin-bottom: 25px;
+@media screen and (max-width: 1000px) {
+    .serviceList2 {
+        & a {
+            display: block;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+    .catalog {
+        margin-left: 0;
+        margin-bottom: 52px;
+        transition: 0.4s;
+        & h2 {
+            left: 0;
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 25px;
+        }
+        & p {
+            left: 0;
+            width: 100%;
+        }
+    }
 }
 
-.textCatalogSection p {
-    width: 67%;
+@media screen and (max-width: 770px) {
+
+    .serviceList2 {
+        & a {
+            display: block;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+    .catalog {
+        margin-left: 0;
+        margin-bottom: 52px;
+        transition: 0.4s;
+        & h2 {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 25px;
+        }
+        & p {
+            width: 100%;
+        }
+    }
 }

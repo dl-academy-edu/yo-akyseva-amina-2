@@ -1,39 +1,69 @@
-
-.titlecontact {
-    font-size: 40px;
-    line-height: 49px;
-    margin-bottom: 0px;
+.contact {
+    margin-top: 55px;
+    transition: 0.4s;
+    &__div {
+        display: flex;
+        margin-bottom: 60px;
+        justify-content: space-around;
+    }
+    &__text {
+        margin-left: 5%;
+        margin-top: -15px;
+        width: 35%;
+    }
+    &__text_small {
+        margin-bottom: 20px;
+    }
+    &__text_big {
+        @extend %montserrat;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #C29974;
+        margin-top: 0;
+    }   
 }
 
-.contactBlock {
-    display: flex;
-    margin-bottom: 60px;
+@media screen and (max-width: 1000px) {
+    .contact {
+        &__div {
+        flex-direction: column-reverse;
+        align-items: center;
+        }
+        &__text {
+            width: 100%;
+            text-align: center;
+        }
+        &__text_big {
+            width: 110%;
+        }
+    }
+
+    .contact__div_form {
+        left: 0;
+    }
 }
 
-.contactText {
-    margin-left: 120px;
-    margin-top: -15px;
-}
+@media screen and (max-width: 770px) {
 
-.textarea {
-    max-height: 140px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-top: 0px;
-    resize: none;
-}
+    .contact {
+        &__text {
+            width: 60%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &__text_big {
+            width: 100%;
+            font-size: 24px;
+            line-height: 34px;
+            text-align: center;
+        }
+    }
 
-.textContactSmall {
-    margin-bottom: 20px;
-}
-
-.texContactBig {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 34px;
-    text-transform: uppercase;
-    color: #C29974;
-    margin-top: 0;
+    .contact__div_form {
+        left: 0;
+        width: 100%;
+    }
 }

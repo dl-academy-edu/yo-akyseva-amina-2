@@ -1,34 +1,189 @@
-.headerOpasity:hover,
-.headerOpasity:focus {
-    opacity: 0.5;
-}
-
-.headerOpasity:active {
-    opacity: 0.2;
-}
-
 .header {
     display: flex;
     align-items: center;
     margin: 50px auto;
-    margin-bottom: 41px;
+    padding-top: 45px;
+    padding-bottom: 10px;
+    transition: 0.4s;
+    &_opasity:active {
+        opacity: 0.2;
+    }
+    &__contact {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        margin-left: 28px;
+    }
+    &__menu {
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        display: flex;
+    }
+    &__menu a{
+        margin-right: 20px;
+    }
+    & nav {
+        margin: 0 auto 0 60px;
+    }
 }
 
-.headerContact {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
-    margin-left: 28px;
+.header_opasity:hover,
+.header_opasity:focus {
+    opacity: 0.5;
+    transition: 0.4s;
 }
 
-.header .menu {
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
-    display: flex;
+.humburger {
+    display: none;
 }
 
-.header nav {
-    margin: 0 auto 0 60px;
+.mobile-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(125, 151, 218, 0.8);
+    z-index: 10;
+
+    &__open {
+        display: block;
+    }
+
+    &__wrapper {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+        padding-top: 4%;
+        height: 83%;
+        width: 100%;
+    }
+
+    &__close {
+        width: 3%;
+        height: 3%;
+        margin-top: 2%;
+        display: block;
+        position: fixed;
+        margin: auto;
+        left: 40%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    &__menu {
+        font-weight: 400;
+        font-size: 120%;
+        line-height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__menu li {
+        margin-bottom: 3%;
+    }
+
+    &__contact {
+        font-weight: 700;
+        font-size: 120%;
+        line-height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 5%;
+    }
+
+    &__2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 4%;
+    }
+
+    &__logo {
+        margin-left: 5%;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    &__search {
+        margin-left: 40.5%;
+        margin-right: 5%;
+    }
+
+    .mobile-header a:nth-child(1) {
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .header {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .humburger {
+        display: block;
+        margin-left: auto;
+        padding: auto;
+        & p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+    }
+
+    .header__menu, .header__contact {
+        display: none;
+    }
+
+    .mobile-header a:nth-child(1) {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    .header {
+        margin-top: 1%;
+    }
+
+    .humburger {
+        display: block;
+        margin-left: auto;
+        padding: auto;
+        & p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+    }
+
+    .header__menu, .header__contact {
+        display: none;
+    }
+
+    .mobile-header__wrapper {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+        padding-top: 4%;
+        height: 60%;
+        width: 100%;
+    }
+
+    .mobile-header a:nth-child(1) {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
 }

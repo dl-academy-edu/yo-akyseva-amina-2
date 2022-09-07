@@ -3,79 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact  Us</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Contact_Us</title>
+    <meta name="description" content="Contact us and we will help you with the choice.">
+    <meta name="keywords" content="Children's clothing and toys store.">
 </head>
 <body>
 
     @@include('blocks/header.html')
 
     <main class="container">
-        <section>
-        <h1 class="title titlecontact">Contact&ensp;Us</h1>
-        <div class="navigation">
-            <a href="#" class="navigationPart navArrow italic">Home</a>
-            <p class="navigationPart italic">Contact us</p>
+        <section class="contact">
+        <h1 class="title title_contact">Contact&ensp;Us</h1>
+        <div class="navigation_div">
+            <a href="#" class=" navigation__pseudo italic">Home</a>
+            <p class=" italic">Contact us</p>
         </div>
 
-        <div class="contactBlock">
-            <form action="#" class="contactform">
-                <div>
-                    <label class="labelWrapper">
-                        <span>Name</span>
-                        <input type="text" class="inputBorder" placeholder="Ivan Ivanov">
-                    </label>
-                </div>
-                <div class="labelColoms">
-                    <div class="labelColoms1">
-                        <label class="labelWrapper">
-                            <span>Phone</span>
-                            <input type="tel" class="inputBorder">
-                        </label>
-                    </div>
-                    <div>
-                        <label class="labelWrapper">
-                            <span>Email</span>
-                            <input type="email" class="inputBorder">
-                        </label>
-                    </div>
-                </div>
+        <div class="contact__div">
+            <div class="contact__div_form">
+                @@include('blocks/form.html')
+            </div>
 
-                <div>
-                    <label class="labelWrapper">
-                        <span>Message</span>
-                        <textarea name="textarea" cols="30" rows="10" class="textarea inputBorder"></textarea>
-                    </label>
-                </div>
-
-                <fieldset class="fieldset" >
-                    <legend class="agreement">Agreement</legend>
-                    <ul class="undotted">
-                        <li>
-                            <label class="fieldset">
-                                <input type="checkbox" class="checkboxInput" checked>
-                                <span class="checkboxSpan">By clicking on the button, you consent to the processing of your personal data</span>
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-
-                <button type="submit" class="button">Submit</button>
-            </form>
-            
-            <div class="contactText">
-                <p class="textContactSmall">Our support team are on-hand to assist with any issues you are experiencing.</p>
-                <p class="textContactSmall">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-                <p class="texContactBig">An expert is waiting to help you!</p>
+            <div class="contact__text">
+                <p class="contact__text_small">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p class="contact__text_small">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <p class="contact__text_big">An expert is waiting to help you!</p>
             </div>
         </div>
         </section>
     </main>
 
-    @@include(blocks/footer.html)
+    @@include('blocks/footer.html')
+
+    <script src="js/menu.js"></script>
     
 </body>
 </html>

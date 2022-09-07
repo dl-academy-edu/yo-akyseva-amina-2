@@ -2,3 +2,17 @@
   max-width: 1180px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
